@@ -14,6 +14,8 @@ const purchaseRows = computed(() => {
     ['Store', p.store],
     ['Location', [p.city, p.country].filter(Boolean).join(', ')],
     ['Purchased', p.date ?? p.dateNote],
+    ['Shipped from', p.shippedFrom],
+    ['Note', p.date ? p.dateNote : undefined],
     ['Price', p.price],
   ].filter((row): row is [string, string] => !!row[1])
 })
@@ -26,7 +28,11 @@ const purchaseRows = computed(() => {
 
   <article v-else>
     <header>
-      <StatusBadge :status="report.implant.status" :version="report.implant.version" />
+      <StatusBadge
+        :status="report.implant.status"
+        :version="report.implant.version"
+        :generation="report.implant.generation"
+      />
       <h1>{{ report.title }}</h1>
       <p class="meta">Reported {{ formatDate(report.reportedAt) }}</p>
     </header>
@@ -66,6 +72,10 @@ const purchaseRows = computed(() => {
         <dl>
           <dt>Status</dt>
           <dd>{{ report.implant.status }}</dd>
+          <template v-if="report.implant.generation">
+            <dt>Generation</dt>
+            <dd>{{ report.implant.generation }}</dd>
+          </template>
           <template v-if="report.implant.version">
             <dt>Version</dt>
             <dd>v{{ report.implant.version }}</dd>

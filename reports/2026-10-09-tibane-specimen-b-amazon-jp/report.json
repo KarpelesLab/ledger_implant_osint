@@ -1,0 +1,84 @@
+{
+  "title": "Ledger Nano X (Specimen B) from Amazon Japan",
+  "reportedAt": "2026-10-09T19:03:29Z",
+  "device": {
+    "model": "Ledger Nano X",
+    "variant": "Lilac cover, pink case frame"
+  },
+  "purchase": {
+    "retailer": "Amazon Japan",
+    "store": "Third-party seller based in China",
+    "country": "JP",
+    "shippedFrom": "Malaysia, via DHL",
+    "date": "2026-09"
+  },
+  "implant": {
+    "generation": "Gen 3",
+    "status": "confirmed",
+    "marking": "AC-A2016-NANO-V1.1",
+    "analyzedBy": "Tibane Labs",
+    "components": [
+      "Nordic Semiconductor nRF9151 LTE-M / NB-IoT module, markings intact (lot 2539, likely week 39 of 2025)",
+      "QFN MCU, markings scraped off",
+      "8-pad MFF2 eSIM, 5×6 mm, markings scraped off",
+      "U.FL connector and coax lead to a custom flex antenna (AC-A2016-NANO-V1.1)",
+      "Black-coated orange polyimide flex PCB"
+    ],
+    "notes": "With the case open and the screen in place, the device looks normal apart from a thin antenna wire along the top edge. The implant sits under the OLED, in space freed by removing its foam padding, so the original battery is untouched. The flex is coated black to match the board, and its outline is keyed to the Ledger's own surface-mount parts so it drops into place, which suggests it was built for mass installation. The L-shaped antenna runs along the inside of the case shell."
+  },
+  "sources": [
+    {
+      "url": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "title": "Ledger Nano X: the spy implant",
+      "author": "Tibane Labs",
+      "postedAt": "2026-10-09T19:03:29Z"
+    }
+  ],
+  "images": [
+    {
+      "file": "camo-closed.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "First inspection, with the screen still in place. Apart from the black antenna wire along the top edge, nothing looks out of place."
+    },
+    {
+      "file": "camo-under-screen.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "Under the screen: eSIM (left, scraped), Nordic nRF9151 module (centre) and MCU (right, scraped). The coax antenna lead leaves from the U.FL connector at the top."
+    },
+    {
+      "file": "camo-oled-back.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The back of the OLED. The foam pad has been torn off, leaving only fibres and adhesive, and the implant sits in that space."
+    },
+    {
+      "file": "camo-nrf9151.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The modem: Nordic nRF9151 (lot 2539XAAG00ETTE5), markings intact."
+    },
+    {
+      "file": "camo-mcu.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The MCU, its top surface scraped bare."
+    },
+    {
+      "file": "camouflaged-implant.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The custom antenna, AC-A2016-NANO-V1.1, stuck along the inside of the case shell (bottom), with its coax lead to the U.FL connector on the implant (top)."
+    },
+    {
+      "file": "camo-desoldered.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "Out of the Ledger: the bare Nano X board (top) and the black-coated flex implant with its tail (bottom). Ruler in cm."
+    },
+    {
+      "file": "camo-apart.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The scraped eSIM and MCU and the nRF9151, next to their footprints on the implant."
+    },
+    {
+      "file": "camo-flex-coating.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "Where the black coating has worn off the tail, orange flex and a cross-hatched ground plane show through."
+    }
+  ]
+}

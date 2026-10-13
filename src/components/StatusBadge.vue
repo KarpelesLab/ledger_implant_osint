@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import type { ImplantStatus } from '@/reports'
 
-defineProps<{ status: ImplantStatus; version?: string }>()
+defineProps<{ status: ImplantStatus; version?: string; generation?: string }>()
 </script>
 
 <template>
   <span class="badge" :class="status">
-    {{ status }}<template v-if="version"> · v{{ version }}</template>
+    {{ status }}<template v-if="version"> · v{{ version }}</template
+    ><template v-else-if="generation"> · {{ generation }}</template>
   </span>
 </template>
 

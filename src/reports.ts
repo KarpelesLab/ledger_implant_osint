@@ -27,10 +27,12 @@ export interface ReportData {
     country?: string
     date: string | null
     dateNote?: string
+    shippedFrom?: string
     price?: string
   }
   implant: {
     version?: string
+    generation?: string
     status: ImplantStatus
     marking?: string
     analyzedBy?: string

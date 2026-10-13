@@ -19,7 +19,11 @@ import StatusBadge from '@/components/StatusBadge.vue'
           loading="lazy"
         />
         <div class="body">
-          <StatusBadge :status="r.implant.status" :version="r.implant.version" />
+          <StatusBadge
+            :status="r.implant.status"
+            :version="r.implant.version"
+            :generation="r.implant.generation"
+          />
           <h2>{{ r.title }}</h2>
           <p class="meta">
             {{ r.device.model }}

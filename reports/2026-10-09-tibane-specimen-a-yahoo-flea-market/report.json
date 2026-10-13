@@ -1,0 +1,77 @@
+{
+  "title": "Ledger Nano X (Specimen A) from Yahoo! Flea Market, Japan",
+  "reportedAt": "2026-10-09T19:03:29Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "retailer": "Yahoo! Flea Market",
+    "country": "JP",
+    "date": "2026-09",
+    "dateNote": "The seller said they had originally bought it on Amazon some time earlier."
+  },
+  "implant": {
+    "generation": "Gen 2",
+    "status": "confirmed",
+    "analyzedBy": "Tibane Labs",
+    "components": [
+      "STMicroelectronics STM32G431KBU6 MCU, markings intact (CHN 551, likely week 51 of 2025)",
+      "Shielded LTE module",
+      "8-pad eSIM, 2×2 mm",
+      "Flat printed antenna taped across the battery and the LTE module",
+      "Unmarked replacement LiPo battery with no protection circuit",
+      "Kapton flex soldered to the Nano X test pads (GND, VBAT, display SPI)"
+    ],
+    "notes": "A one-piece polyimide (Kapton) flex PCB, with silkscreen designators up to U6, is laminated across the back of the Nano X board. Its plated holes line up with the factory test pads, which give the implant power and the display SPI lines. Some joints only anchor the flex. A tail carries the replacement battery, and the module area carries the MCU, the eSIM and the LTE module in space taken from the shrunken battery."
+  },
+  "sources": [
+    {
+      "url": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "title": "Ledger Nano X: the spy implant",
+      "author": "Tibane Labs",
+      "postedAt": "2026-10-09T19:03:29Z"
+    }
+  ],
+  "images": [
+    {
+      "file": "flex-implant.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The Kapton flex spread over the back of the Nano X board (top), soldered to its test pads for GND, VBAT and display SPI, leading to the implant module and flat antenna next to the battery (bottom)."
+    },
+    {
+      "file": "flex-antenna.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The flat antenna, taped over the battery and the LTE module."
+    },
+    {
+      "file": "flex-teardown.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "Fully apart: OLED, unmarked battery with antenna, flex implant, Nano X board."
+    },
+    {
+      "file": "flex-stm32.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The implant MCU: STM32G431KBU6, marked GQ25G 119R CHN 551X."
+    },
+    {
+      "file": "flex-desoldered.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "Out of the Ledger: the bare Nano X board (top) and the one-piece implant flex (bottom). Ruler in cm."
+    },
+    {
+      "file": "flex-apart.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The STM32, the eSIM and the LTE module lifted off the flex, exposing the module's land grid."
+    },
+    {
+      "file": "flex-esim.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The eSIM from below, on a millimetre scale: 8 pads, about 2×2 mm."
+    },
+    {
+      "file": "flex-esim-footprint.jpg",
+      "source": "https://www.tibane.net/research/ledger-nano-x-implant",
+      "caption": "The eSIM's footprint after desoldering: the standard SIM pattern, with VCC/GND and the CLK, RESET and DATA lines."
+    }
+  ]
+}
