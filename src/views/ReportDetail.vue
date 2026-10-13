@@ -80,6 +80,12 @@ const purchaseRows = computed(() => {
             <dt>Generation</dt>
             <dd>{{ report.implant.generation }}</dd>
           </template>
+          <template v-if="report.implant.imei?.length">
+            <dt>IMEI</dt>
+            <dd>
+              <span v-for="n in report.implant.imei" :key="n" class="imei">{{ n }}</span>
+            </dd>
+          </template>
           <template v-if="report.implant.analyzedBy">
             <dt>Examined by</dt>
             <dd>{{ report.implant.analyzedBy }}</dd>
@@ -250,6 +256,12 @@ h2 {
 }
 dt {
   color: var(--muted);
+}
+.imei {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  letter-spacing: 0.03em;
 }
 dd {
   margin: 0;

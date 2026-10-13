@@ -46,6 +46,8 @@ export interface ReportData {
     generation?: string
     status: ImplantStatus
     marking?: string
+    /** IMEIs of the implant's cellular modem, read from its label or Data Matrix code. */
+    imei?: string[]
     analyzedBy?: string
     components?: string[]
     notes?: string

@@ -13,13 +13,16 @@
   "implant": {
     "status": "confirmed",
     "marking": "AC-A2205-NANO-X-欧亚版-V1.0",
+    "imei": [
+      "867593081451169"
+    ],
     "components": [
       "Printed antenna inside the case, marked AC-A2205-NANO-X 欧亚版-V1.0, with a coax lead",
       "Red jumper wires from the Nano X board to a small board on the battery",
       "Replacement battery: MB 281544, 3.7 V 130 mAh 0.481 Wh, dated 2026-04-03",
-      "LTE module, per the buyer"
+      "Cellular module, IMEI 867593081451169 and module serial M004J1406AD0603, from the Data Matrix code on its label"
     ],
-    "notes": "The buyer, Johannes (@0xJohannes_), found extra wires, a printed antenna in the case and what he calls an LTE module. He says the device passed Ledger's genuine check, and that he sent it to Mark Karpelès (@MagicalTux) for analysis. Johannes's original post was not located. The clearest photos come from a repost by @CryptosR_Us. The antenna marking follows the same AC-A2xxx scheme as the Flex (AC-A2201-FLEX) and Nano X (AC-A2016-NANO) antennas in other reports."
+    "notes": "The buyer, Johannes (@0xJohannes_), found extra wires, a printed antenna in the case and what he calls an LTE module. He says the device passed Ledger's genuine check, and that he sent it to Mark Karpelès (@MagicalTux) for analysis. Johannes's original post was not located. The clearest photos come from a repost by @CryptosR_Us. The antenna marking follows the same AC-A2xxx scheme as the Flex (AC-A2201-FLEX) and Nano X (AC-A2016-NANO) antennas in other reports. The IMEI was decoded from the Data Matrix code on the module, in the right half of Johannes's annotated photo. Its check digit is valid. The left half of that photo is this device; the post doesn't say whether the right half is this device or the second one. The IMEI's TAC, 86759308, couldn't be matched to a manufacturer from public sources."
   },
   "sources": [
     {
@@ -48,7 +51,7 @@
       "file": "HUbrFdJXUAARwOS.jpg",
       "source": "https://x.com/0xJohannes_/status/2109634513957527974",
       "original": "https://pbs.twimg.com/media/HUbrFdJXUAARwOS.jpg?name=orig",
-      "caption": "Johannes's annotated photos: the extra wires and antenna (left), and the board he identifies as the LTE module (right)."
+      "caption": "Johannes's annotated photos: the extra wires and antenna (left), and the board he identifies as the LTE module (right). The module's Data Matrix code decodes to IMEI 867593081451169."
     },
     {
       "file": "HUbs_CzWgAAtA-7.png",
