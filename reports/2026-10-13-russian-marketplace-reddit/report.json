@@ -1,0 +1,43 @@
+{
+  "title": "Ledger Nano X from a Russian marketplace",
+  "reportedAt": "2026-10-13T13:51:49Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "retailer": "An unnamed online marketplace",
+    "country": "RU",
+    "date": null
+  },
+  "implant": {
+    "status": "confirmed",
+    "components": [
+      "Thin implant board wedged between the display and the main board",
+      "Antenna connector with a coax lead",
+      "Replacement battery, label ending \"0.481Wh 2026-…-03\""
+    ],
+    "notes": "A Reddit user, u/cheerful_afternoon, opened a Nano X bought on a Russian online marketplace, not an official Ledger reseller. Inside was a thin extra board wedged between the screen and the main board, with its own antenna. The details here come from Bitcoin Well's summary and the labelled photo: the Reddit thread is behind a CAPTCHA and couldn't be read for this report. The visible battery label (0.481 Wh, dated 2026-…-03) matches the replacement battery in the first MediaMarkt device and the @coinjoined device (MB 281544, 130 mAh 0.481 Wh, 2026-04-03)."
+  },
+  "sources": [
+    {
+      "url": "https://www.reddit.com/r/ledgerwallet/comments/1x4dhw3/ledger_is_hack/",
+      "title": "Ledger is hack",
+      "author": "u/cheerful_afternoon on r/ledgerwallet"
+    },
+    {
+      "url": "https://x.com/bitcoinwell/status/2110005592605475218",
+      "author": "Bitcoin Well",
+      "handle": "bitcoinwell",
+      "postedAt": "2026-10-13T13:51:49Z",
+      "text": "This is what the Ledger implant looks like from the inside.\n\nA Reddit user opened a Nano X bought on a Russian marketplace, not from Ledger, and found a thin extra board wedged between the screen and the main circuit board, with its own antenna.\n\nLedger confirmed the mechanism overnight: the board reads the screen, waits for the 24 words to appear during setup, and sends them out over LTE on its own eSIM. The secure chip was never touched. It didn’t need to be.\n\nThis is why you always buy straight from the manufacturer. If you are worried and want to check, Ledger’s own guide is in the replies.\n\n(labels in the photo: u/cheerful_afternoon on Reddit.)"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUg-U1DXMAA1f6r.jpg",
+      "source": "https://x.com/bitcoinwell/status/2110005592605475218",
+      "original": "https://pbs.twimg.com/media/HUg-U1DXMAA1f6r.jpg?name=orig",
+      "caption": "Labelled by the Reddit user: the thin implant board between the main display and the main PCB, with an antenna connector. The battery behind is labelled \"0.481Wh 2026-…-03\"."
+    }
+  ]
+}
