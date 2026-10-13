@@ -4,9 +4,13 @@
 
 This project tracks publicly reported Ledger devices that were found with hardware implants. The reports come from posts and photos published by different people. Each entry records where the device was bought, the model, the implant version (if known), and links back to the original sources. Every picture is archived in this repo.
 
-## Adding a report
+## Reporting a new case
 
-Each report is a folder under `reports/`, named `YYYY-MM-DD-<retailer>-<location>`:
+The easiest way is to **[open a "Report new case" issue](https://github.com/KarpelesLab/ledger_implant_osint/issues/new?template=new-case.yml)** with links to the posts that show the device. We download and archive the photos and videos, and fill in the details.
+
+## Adding a report yourself
+
+If you'd rather send a pull request, each report is a folder under `reports/`, named `YYYY-MM-DD-<retailer>-<location>`:
 
 ```
 reports/2026-10-13-challenger-vivocity-sg/

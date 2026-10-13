@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { reports, formatDate, place } from '@/reports'
 import StatusBadge from '@/components/StatusBadge.vue'
 import SilkMarking from '@/components/SilkMarking.vue'
+import { newCaseUrl } from '@/links'
 
 const sellerCount = computed(
   () => new Set(reports.map((r) => r.purchase.retailer).filter(Boolean)).size,
@@ -20,6 +21,11 @@ const sellerCount = computed(
     <p class="count">
       {{ reports.length }} devices from {{ sellerCount }} named sellers so far. Every report links
       to the people who found it.
+    </p>
+    <p class="cta">
+      Seen a tampered device that isn't listed?
+      <a :href="newCaseUrl" target="_blank" rel="noopener">Report new case</a>. A link to the post
+      is enough.
     </p>
   </section>
 
@@ -97,6 +103,12 @@ h1 {
 .count {
   color: var(--muted);
   margin: 0;
+}
+.cta {
+  margin: 0.75rem 0 0;
+}
+.cta a {
+  font-weight: 700;
 }
 
 .advice {

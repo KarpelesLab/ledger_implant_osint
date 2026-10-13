@@ -1,0 +1,88 @@
+name: Report new case
+description: A Ledger device found with an implant, or a public post about one.
+title: "New case: "
+labels: ["new case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Links to public posts are enough: we archive the photos and fill in the details.
+
+        **Never share your recovery phrase, PIN or seed backup**, here or anywhere else. Nobody needs them to check a device.
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Links to the posts, videos or articles that show the device, one per line. If you're the owner, you can attach photos here instead.
+      placeholder: |
+        https://x.com/someone/status/1234567890
+        https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: model
+    attributes:
+      label: Device model
+      options:
+        - Ledger Nano X
+        - Ledger Nano S Plus
+        - Ledger Nano S
+        - Ledger Flex
+        - Ledger Stax
+        - Other or not sure
+    validations:
+      required: false
+
+  - type: input
+    id: seller
+    attributes:
+      label: Where it was bought
+      description: The seller or marketplace, and the store or listing if known.
+      placeholder: "MediaMarkt, Berlin Alexanderplatz"
+    validations:
+      required: false
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
+      placeholder: Germany
+    validations:
+      required: false
+
+  - type: input
+    id: date
+    attributes:
+      label: When it was bought
+      description: An exact date or a rough one, like "June 2026".
+    validations:
+      required: false
+
+  - type: input
+    id: marking
+    attributes:
+      label: Marking on the implant or antenna
+      description: Any text printed on the added parts, such as AC-A2201-FLEX-欧亚版-V1.2.
+    validations:
+      required: false
+
+  - type: textarea
+    id: found
+    attributes:
+      label: What was found
+      description: What looked wrong once the device was opened, and anything else worth knowing.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: relation
+    attributes:
+      label: How you know about it
+      options:
+        - It's my device
+        - I saw it posted publicly
+        - Someone told me about it
+    validations:
+      required: false

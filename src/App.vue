@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const repo = 'https://github.com/KarpelesLab/ledger_implant_osint'
+import { repoUrl as repo, newCaseUrl } from '@/links'
 </script>
 
 <template>
@@ -7,7 +7,7 @@ const repo = 'https://github.com/KarpelesLab/ledger_implant_osint'
   <header class="site">
     <RouterLink to="/" class="brand">Ledger Implant OSINT</RouterLink>
     <nav aria-label="Project">
-      <a :href="`${repo}#adding-a-report`" target="_blank" rel="noopener">Add a report</a>
+      <a :href="newCaseUrl" target="_blank" rel="noopener" class="report-link">Report new case</a>
       <a :href="repo" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -144,8 +144,12 @@ main,
 }
 .site nav {
   display: flex;
+  align-items: baseline;
   gap: 1.25rem;
   font-size: 0.95rem;
+}
+.report-link {
+  font-weight: 700;
 }
 main {
   padding-bottom: 4rem;
