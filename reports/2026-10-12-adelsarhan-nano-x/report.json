@@ -1,0 +1,79 @@
+{
+  "title": "Ledger Nano X shared by @AdelSarhan63587",
+  "reportedAt": "2026-10-12T22:39:20Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "generation": "Older generation, likely Gen 1",
+    "status": "confirmed",
+    "components": [
+      "Add-on board on a yellow Kapton base, chip markings scraped off",
+      "Bundle of enamelled copper wires hand-soldered to the Nano X board",
+      "Replacement battery, with the add-on board taped to it",
+      "Loose copper wire running along the battery"
+    ],
+    "notes": "The photos and video show an add-on board connected to the Nano X main board by hand-soldered enamelled copper wires. The add-on is taped to a replacement battery, and a loose copper wire runs alongside. This matches the older, hand-wired generation of the implant. Purchase details and the exact generation are not confirmed. The video was posted twice, and both copies are identical frame for frame."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/AdelSarhan63587/status/2109775958148522459",
+      "author": "Digital Pro",
+      "handle": "AdelSarhan63587",
+      "postedAt": "2026-10-12T22:39:20Z",
+      "text": "@MagicalTux"
+    },
+    {
+      "url": "https://x.com/AdelSarhan63587/status/2109786792321016018",
+      "author": "Digital Pro",
+      "handle": "AdelSarhan63587",
+      "postedAt": "2026-10-12T23:22:23Z",
+      "text": "هل هذا نظيف (\"Is this clean?\")"
+    },
+    {
+      "url": "https://x.com/AdelSarhan63587/status/2109824349771608435",
+      "author": "Digital Pro",
+      "handle": "AdelSarhan63587",
+      "postedAt": "2026-10-13T01:51:38Z",
+      "text": "@wiimee (the same video, in reply to a post about two Ledgers with no implants found)"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUdt_MJbYAAodYo.jpg",
+      "source": "https://x.com/AdelSarhan63587/status/2109775958148522459",
+      "original": "https://pbs.twimg.com/media/HUdt_MJbYAAodYo.jpg?name=orig",
+      "caption": "The Nano X main board, with enamelled copper wires soldered across it to the add-on board, which is taped to a replacement battery."
+    },
+    {
+      "file": "HUduAmpaUAA6EQa.jpg",
+      "source": "https://x.com/AdelSarhan63587/status/2109775958148522459",
+      "original": "https://pbs.twimg.com/media/HUduAmpaUAA6EQa.jpg?name=orig",
+      "caption": "The add-on board on the battery, with its chip markings scraped off, next to the USB-C connector."
+    },
+    {
+      "file": "HUduBlSaYAATlx9.jpg",
+      "source": "https://x.com/AdelSarhan63587/status/2109775958148522459",
+      "original": "https://pbs.twimg.com/media/HUduBlSaYAATlx9.jpg?name=orig",
+      "caption": "The main board from the other side, with the wire bundle running up to the add-on board and battery."
+    },
+    {
+      "file": "HUduCvrboAA8O1m.jpg",
+      "source": "https://x.com/AdelSarhan63587/status/2109775958148522459",
+      "original": "https://pbs.twimg.com/media/HUduCvrboAA8O1m.jpg?name=orig",
+      "caption": "The battery and add-on board folded onto the main board, with a loose copper wire running along the battery. The Nano X case is in the background."
+    }
+  ],
+  "videos": [
+    {
+      "file": "video-2109824349771608435.mp4",
+      "poster": "video-2109824349771608435-poster.jpg",
+      "source": "https://x.com/AdelSarhan63587/status/2109824349771608435",
+      "original": "https://video.twimg.com/amplify_video/2109824251423563776/vid/avc1/720x1280/ef7cUjpaX_wqeVPl.mp4",
+      "caption": "51-second video of the opened device, showing the wire bundle, the add-on board and the battery."
+    }
+  ]
+}

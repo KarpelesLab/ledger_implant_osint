@@ -11,11 +11,12 @@ Each report is a folder under `reports/`, named `YYYY-MM-DD-<retailer>-<location
 ```
 reports/2026-10-13-challenger-vivocity-sg/
   report.json      # report data (see src/reports.ts for the schema)
-  *.jpg            # pictures, stored with Git LFS
+  *.jpg, *.mp4     # pictures and videos, stored with Git LFS
 ```
 
 - Use the original-size pictures. For X/Twitter media, add `?name=orig` to the URL.
 - In `report.json`, list each picture with its source post and original URL.
+- List videos under `videos`, each with a `poster` still frame (for example `ffmpeg -ss 20 -i video.mp4 -frames:v 1 poster.jpg`).
 - `implant.status` is one of `confirmed`, `suspected`, `unverified` or `clean`.
 
 Pictures are stored with [Git LFS](https://git-lfs.com/), so run `git lfs install` once before cloning or committing.

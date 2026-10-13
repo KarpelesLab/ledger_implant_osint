@@ -102,6 +102,30 @@ const purchaseRows = computed(() => {
       </div>
     </div>
 
+    <section v-if="report.videos.length" class="photos" aria-labelledby="videos-title">
+      <h2 id="videos-title">{{ report.videos.length > 1 ? 'Videos' : 'Video' }}</h2>
+      <ul class="grid">
+        <li v-for="v in report.videos" :key="v.file">
+          <figure>
+            <video
+              :src="v.url"
+              :poster="v.posterUrl"
+              controls
+              preload="none"
+              playsinline
+              class="clip"
+            ></video>
+            <figcaption>
+              {{ v.caption }}
+              <a v-if="v.source" :href="v.source" target="_blank" rel="noopener noreferrer"
+                >Source</a
+              >
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
     <section class="photos" aria-labelledby="photos-title">
       <h2 id="photos-title">Photos</h2>
       <p class="muted">Select a photo to view it full size.</p>
@@ -285,6 +309,13 @@ figure {
   width: 100%;
   height: auto;
   border-radius: 2px;
+}
+.clip {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  background: var(--mask);
 }
 .open:hover img {
   opacity: 0.92;
