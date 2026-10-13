@@ -1,0 +1,52 @@
+{
+  "title": "Ledger Flex shared by @dafangbigfang and @133666A",
+  "reportedAt": "2026-10-12T11:34:01Z",
+  "device": {
+    "model": "Ledger Flex"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "version": "1.2",
+    "status": "confirmed",
+    "marking": "AC-A2201-FLEX-欧亚版-V1.2",
+    "notes": "Confirmed from the photos: the added flex and its antenna lead have the same v1.2 marking as the other reports. @dafangbigfang posted photos of a device that someone sent them. Nine minutes later, @133666A replied with photos of their own opened Flex. It is unclear whether @133666A is the person who sent it or this is a second device. No purchase details were given."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/dafangbigfang/status/2109608522476626174",
+      "author": "大方BigFang",
+      "handle": "dafangbigfang",
+      "postedAt": "2026-10-12T11:34:01Z",
+      "text": "Someone has sent me information about a Ledger Flex that may have been physically tampered with. The wallet has been opened, revealing what appears to be an added communication chip. Its exact function and purpose still need to be verified.\n\nI’m currently waiting for their permission to share the material. Once I have it, I’ll publish the details as soon as possible so we can take a closer look at what happened.\n\nWhether this is the first known case worldwide remains unconfirmed."
+    },
+    {
+      "url": "https://x.com/133666A/status/2109610899116032172",
+      "author": "G “NPC” G",
+      "handle": "133666A",
+      "postedAt": "2026-10-12T11:43:27Z",
+      "text": "@dafangbigfang This is what my Flex looks like when taken apart."
+    }
+  ],
+  "images": [
+    {
+      "file": "HUbX7LBbUAAH9w0.jpg",
+      "source": "https://x.com/133666A/status/2109610899116032172",
+      "original": "https://pbs.twimg.com/media/HUbX7LBbUAAH9w0.jpg?name=orig",
+      "caption": "@133666A's opened Flex. The back cover carries the added flex marked \"AC-A2201-FLEX-欧亚版-V1.2\", with an antenna lead running into the device."
+    },
+    {
+      "file": "HUbVfRZbQAA1SL1.png",
+      "source": "https://x.com/dafangbigfang/status/2109608522476626174",
+      "original": "https://pbs.twimg.com/media/HUbVfRZbQAA1SL1.png?name=orig",
+      "caption": "The device sent to @dafangbigfang: the added flex on the back cover (\"…-A2201-FLEX-欧亚版-V1.2\") with its antenna lead, above the main board shield."
+    },
+    {
+      "file": "HUbVZSVaYAAURny.jpg",
+      "source": "https://x.com/dafangbigfang/status/2109608522476626174",
+      "original": "https://pbs.twimg.com/media/HUbVZSVaYAAURny.jpg?name=orig",
+      "caption": "@dafangbigfang holding up a Ledger Flex."
+    }
+  ]
+}

@@ -52,7 +52,8 @@ const purchaseRows = computed(() => {
 
       <section>
         <h2>Purchase</h2>
-        <dl>
+        <p v-if="!purchaseRows.length" class="meta">Unknown</p>
+        <dl v-else>
           <template v-for="[k, v] in purchaseRows" :key="k">
             <dt>{{ k }}</dt>
             <dd>{{ v }}</dd>
