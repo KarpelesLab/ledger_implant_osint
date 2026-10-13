@@ -1,0 +1,57 @@
+{
+  "title": "Ledger Nano X shared by @coinjoined",
+  "reportedAt": "2026-10-13T15:47:09Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "status": "confirmed",
+    "marking": "AC-A2205-NX-欧亚版-V1.1",
+    "components": [
+      "Printed antenna inside the case, marked AC-A2205-NX 欧亚版-V1.1, with a coax lead to a u.FL connector",
+      "Black implant board next to the Nano X board, carrying a large module and a QFN chip",
+      "Replacement battery: MB 281544, 3.7 V 130 mAh 0.481 Wh, dated 2026-04-03",
+      "Small board on the battery, partly legible marking …X-1350-D",
+      "Twisted enamelled wires from the battery board to the Nano X board, next to the USB-C connector"
+    ],
+    "notes": "The post shows three photos of an implanted Nano X and one of a genuine Nano X for comparison. It doesn't say who owns the device or where it was bought. The replacement battery has the same label and date as the first MediaMarkt device. The antenna is the same part number, AC-A2205, as that device's antenna (AC-A2205-NANO-X-欧亚版-V1.0), but a later revision, V1.1. The post lists the allegedly affected resellers so far as MediaMarkt and Saturn in Germany, Cryptobilis in Malaysia, Ozon in Russia, and Singapore airport."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/coinjoined/status/2110034615247245682",
+      "author": "Coinjoined Chris",
+      "handle": "coinjoined",
+      "postedAt": "2026-10-13T15:47:09Z",
+      "text": "There shouldn't be any cables. First 3 images show the implant, last image a genuine @Ledger Nano X.\nAllegedly affected resellers so far: MediaMarkt, Saturn 🇩🇪, Cryptobilis 🇲🇾, Ozon 🇷🇺 and Singapore Airport 🇸🇬"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUhZRdaWIAEbOMB.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZRdaWIAEbOMB.jpg?name=orig",
+      "caption": "Opened case: a black implant board with a large module and a u.FL antenna connector sits beside the green Nano X board."
+    },
+    {
+      "file": "HUhZSARXUAAnu-O.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZSARXUAAnu-O.jpg?name=orig",
+      "caption": "The Nano X board lifted out, with the replacement 130 mAh battery (2026-04-03) wired on. The coax lead runs to a printed antenna in the case, marked AC-A2205-NX 欧亚版-V1.1."
+    },
+    {
+      "file": "HUhZSjBWYAA_g_R.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZSjBWYAA_g_R.jpg?name=orig",
+      "caption": "Close-up: twisted enamelled wires run from the small board on the battery to pads on the Nano X board, next to the USB-C connector."
+    },
+    {
+      "file": "HUhZTHDX0AAT4Ve.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZTHDX0AAT4Ve.jpg?name=orig",
+      "caption": "For comparison, the post's last photo: a genuine Nano X, with no extra wires or boards and its original 100 mAh battery."
+    }
+  ]
+}
