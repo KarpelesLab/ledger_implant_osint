@@ -1,46 +1,51 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { findReport, formatDate } from '@/reports'
+import { computed, ref } from 'vue'
+import { findReport, formatDate, place, summary } from '@/reports'
 import StatusBadge from '@/components/StatusBadge.vue'
+import SilkMarking from '@/components/SilkMarking.vue'
+import PhotoViewer from '@/components/PhotoViewer.vue'
 
 const props = defineProps<{ id: string }>()
 const report = computed(() => findReport(props.id))
+const viewing = ref<number | null>(null)
 
 const purchaseRows = computed(() => {
   const p = report.value?.purchase
   if (!p) return []
   return [
-    ['Retailer', p.retailer],
+    ['Seller', p.retailer],
     ['Store', p.store],
-    ['Location', [p.city, p.country].filter(Boolean).join(', ')],
-    ['Purchased', p.date ?? p.dateNote],
-    ['Shipped from', p.shippedFrom],
+    ['Place', place(p)],
+    ['When', p.date ? formatDate(p.date) : p.dateNote],
     ['Note', p.date ? p.dateNote : undefined],
+    ['Shipped from', p.shippedFrom],
     ['Price', p.price],
   ].filter((row): row is [string, string] => !!row[1])
 })
 </script>
 
 <template>
-  <RouterLink to="/" class="back">← All reports</RouterLink>
+  <RouterLink to="/" class="back">All reports</RouterLink>
 
-  <p v-if="!report">Report not found.</p>
+  <div v-if="!report" class="missing">
+    <h1>No report with this address</h1>
+    <p>It may have been renamed. <RouterLink to="/">See all reports</RouterLink>.</p>
+  </div>
 
   <article v-else>
-    <header>
-      <StatusBadge
-        :status="report.implant.status"
-        :version="report.implant.version"
-        :generation="report.implant.generation"
-      />
+    <header class="head">
       <h1>{{ report.title }}</h1>
-      <p class="meta">Reported {{ formatDate(report.reportedAt) }}</p>
+      <p class="lede">{{ summary(report) }}</p>
+      <div class="verdict">
+        <StatusBadge :status="report.implant.status" />
+        <SilkMarking v-if="report.implant.marking" :text="report.implant.marking" size="large" />
+      </div>
     </header>
 
-    <div class="facts">
-      <section>
-        <h2>Device</h2>
-        <dl>
+    <div class="layout">
+      <dl class="facts">
+        <div class="group">
+          <h2>Device</h2>
           <dt>Model</dt>
           <dd>{{ report.device.model }}</dd>
           <template v-if="report.device.variant">
@@ -49,124 +54,174 @@ const purchaseRows = computed(() => {
           </template>
           <template v-if="report.device.ean">
             <dt>EAN</dt>
-            <dd>
-              <code>{{ report.device.ean }}</code>
-            </dd>
+            <dd>{{ report.device.ean }}</dd>
           </template>
-        </dl>
-      </section>
+        </div>
 
-      <section>
-        <h2>Purchase</h2>
-        <p v-if="!purchaseRows.length" class="meta">Unknown</p>
-        <dl v-else>
-          <template v-for="[k, v] in purchaseRows" :key="k">
-            <dt>{{ k }}</dt>
-            <dd>{{ v }}</dd>
+        <div class="group">
+          <h2>Purchase</h2>
+          <template v-if="purchaseRows.length">
+            <template v-for="[k, v] in purchaseRows" :key="k">
+              <dt>{{ k }}</dt>
+              <dd>{{ v }}</dd>
+            </template>
           </template>
-        </dl>
-      </section>
+          <p v-else class="muted">Not given in the sources.</p>
+        </div>
 
-      <section>
-        <h2>Implant</h2>
-        <dl>
-          <dt>Status</dt>
-          <dd>{{ report.implant.status }}</dd>
-          <template v-if="report.implant.generation">
-            <dt>Generation</dt>
-            <dd>{{ report.implant.generation }}</dd>
-          </template>
+        <div class="group">
+          <h2>Implant</h2>
           <template v-if="report.implant.version">
             <dt>Version</dt>
             <dd>v{{ report.implant.version }}</dd>
           </template>
-          <template v-if="report.implant.marking">
-            <dt>Marking</dt>
-            <dd>
-              <code>{{ report.implant.marking }}</code>
-            </dd>
+          <template v-if="report.implant.generation">
+            <dt>Generation</dt>
+            <dd>{{ report.implant.generation }}</dd>
           </template>
           <template v-if="report.implant.analyzedBy">
-            <dt>Analyzed by</dt>
+            <dt>Examined by</dt>
             <dd>{{ report.implant.analyzedBy }}</dd>
           </template>
-          <template v-if="report.implant.components?.length">
-            <dt>Components</dt>
-            <dd>
-              <ul class="components">
-                <li v-for="c in report.implant.components" :key="c">{{ c }}</li>
-              </ul>
-            </dd>
-          </template>
-        </dl>
-        <p v-if="report.implant.notes">{{ report.implant.notes }}</p>
-      </section>
+          <dt>Reported</dt>
+          <dd>{{ formatDate(report.reportedAt) }}</dd>
+        </div>
+      </dl>
+
+      <div class="prose">
+        <template v-if="report.implant.notes">
+          <h2>What was found</h2>
+          <p>{{ report.implant.notes }}</p>
+        </template>
+        <template v-if="report.implant.components?.length">
+          <h2>Parts identified</h2>
+          <ul>
+            <li v-for="c in report.implant.components" :key="c">{{ c }}</li>
+          </ul>
+        </template>
+      </div>
     </div>
 
-    <section>
-      <h2>Sources</h2>
-      <ul class="sources">
-        <li v-for="s in report.sources" :key="s.url">
-          <a :href="s.url" target="_blank" rel="noopener noreferrer">
-            <template v-if="s.title">{{ s.title }} — </template>
-            <template v-if="s.author">{{ s.author }}</template>
-            <template v-if="s.handle"> (@{{ s.handle }})</template>
-            <template v-if="!s.author && !s.handle">{{ s.url }}</template>
-          </a>
-          <span v-if="s.postedAt" class="meta"> · {{ formatDate(s.postedAt) }}</span>
-          <blockquote v-if="s.text">{{ s.text }}</blockquote>
+    <section class="photos" aria-labelledby="photos-title">
+      <h2 id="photos-title">Photos</h2>
+      <p class="muted">Select a photo to view it full size.</p>
+      <ul class="grid">
+        <li v-for="(img, i) in report.images" :key="img.file">
+          <figure>
+            <button type="button" class="open" @click="viewing = i">
+              <img :src="img.url" :alt="img.caption ?? img.file" loading="lazy" />
+            </button>
+            <figcaption>
+              {{ img.caption }}
+              <a v-if="img.source" :href="img.source" target="_blank" rel="noopener noreferrer"
+                >Source</a
+              >
+            </figcaption>
+          </figure>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Pictures</h2>
-      <div class="gallery">
-        <figure v-for="img in report.images" :key="img.file">
-          <a :href="img.url" target="_blank" rel="noopener">
-            <img :src="img.url" :alt="img.caption ?? img.file" loading="lazy" />
-          </a>
-          <figcaption>
-            {{ img.caption }}
-            <a v-if="img.source" :href="img.source" target="_blank" rel="noopener noreferrer"
-              >source</a
-            >
-          </figcaption>
-        </figure>
-      </div>
+    <section class="sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources</h2>
+      <ol>
+        <li v-for="s in report.sources" :key="s.url">
+          <p class="who">
+            <a :href="s.url" target="_blank" rel="noopener noreferrer">{{
+              s.title ?? s.author ?? s.url
+            }}</a>
+            <span class="muted">
+              <template v-if="s.title && s.author"> by {{ s.author }}</template>
+              <template v-else-if="s.handle"> @{{ s.handle }}</template>
+              <template v-if="s.postedAt">, {{ formatDate(s.postedAt) }}</template>
+            </span>
+          </p>
+          <blockquote v-if="s.text">{{ s.text }}</blockquote>
+        </li>
+      </ol>
     </section>
+
+    <PhotoViewer v-model="viewing" :images="report.images" />
   </article>
 </template>
 
 <style scoped>
 .back {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+.back::before {
+  content: '‹';
+  margin-right: 0.35em;
+}
+.missing {
+  padding: 3rem 0;
+}
+
+.head {
+  max-width: 48rem;
+  padding: 1.5rem 0 2.25rem;
 }
 h1 {
-  margin: 0.5rem 0 0.25rem;
+  font-size: clamp(1.8rem, 4.4vw, 2.6rem);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.9rem;
+  text-wrap: balance;
 }
+.lede {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  margin: 0 0 1.25rem;
+}
+.verdict {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  font-size: 1.05rem;
+}
+
 h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--muted);
-  margin: 1.5rem 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
 }
-.meta {
+.muted {
   color: var(--muted);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 23rem) minmax(0, 1fr);
+  gap: 2rem 3.5rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--ink);
+}
+@media (max-width: 820px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.facts {
   margin: 0;
 }
-.facts {
-  display: grid;
-  gap: 0 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-dl {
+.group {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 0.25rem 1rem;
-  margin: 0;
+  gap: 0.3rem 1rem;
+  margin-bottom: 1.75rem;
+}
+.group h2,
+.group p {
+  grid-column: 1 / -1;
+  margin-bottom: 0.2rem;
+}
+.group p {
+  margin-top: 0;
 }
 dt {
   color: var(--muted);
@@ -175,39 +230,94 @@ dd {
   margin: 0;
   overflow-wrap: anywhere;
 }
-.components {
-  margin: 0;
-  padding-left: 1.1rem;
+
+.prose {
+  max-width: 38rem;
 }
-.sources {
+.prose p {
+  margin: 0 0 1.75rem;
+}
+.prose ul {
+  margin: 0 0 1.75rem;
   padding-left: 1.2rem;
 }
-blockquote {
-  white-space: pre-line;
-  margin: 0.4rem 0 1rem;
-  padding-left: 0.75rem;
-  border-left: 3px solid var(--border);
-  color: var(--muted);
+.prose li {
+  margin-bottom: 0.35rem;
 }
-.gallery {
+.prose li::marker {
+  color: var(--accent);
+}
+
+.photos,
+.sources {
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+.photos .muted {
+  margin: -0.3rem 0 1.25rem;
+  font-size: 0.92rem;
+}
+/* Photos keep their own shape, uncropped, and read left to right in source order. */
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 1.75rem 1.25rem;
+  align-items: start;
 }
 figure {
   margin: 0;
 }
-figure img {
-  width: 100%;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  border-radius: 6px;
+.open {
   display: block;
-  background: var(--surface);
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: var(--mask);
+  border-radius: 2px;
+  cursor: zoom-in;
+}
+.open img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+.open:hover img {
+  opacity: 0.92;
 }
 figcaption {
-  font-size: 0.85rem;
+  margin-top: 0.55rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+figcaption a {
+  margin-left: 0.25em;
+}
+
+.sources ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 44rem;
+}
+.sources li {
+  margin-bottom: 1.5rem;
+}
+.who {
+  margin: 0 0 0.4rem;
+}
+.who a {
+  font-weight: 600;
+}
+blockquote {
+  margin: 0;
+  padding: 0.1rem 0 0.1rem 1rem;
+  border-left: 3px solid var(--rule);
+  white-space: pre-line;
   color: var(--muted);
-  margin-top: 0.4rem;
 }
 </style>

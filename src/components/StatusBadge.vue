@@ -1,38 +1,38 @@
 <script setup lang="ts">
-import type { ImplantStatus } from '@/reports'
+import { statusLabel, type ImplantStatus } from '@/reports'
 
-defineProps<{ status: ImplantStatus; version?: string; generation?: string }>()
+defineProps<{ status: ImplantStatus }>()
 </script>
 
 <template>
-  <span class="badge" :class="status">
-    {{ status }}<template v-if="version"> · v{{ version }}</template
-    ><template v-else-if="generation"> · {{ generation }}</template>
-  </span>
+  <span class="status" :class="status">{{ statusLabel[status] }}</span>
 </template>
 
 <style scoped>
-.badge {
-  display: inline-block;
-  padding: 0.15em 0.6em;
-  border-radius: 999px;
-  font-size: 0.8rem;
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
   white-space: nowrap;
-  border: 1px solid currentColor;
+}
+.status::before {
+  content: '';
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 1px;
+  background: currentColor;
 }
 .confirmed {
-  color: var(--danger);
+  color: var(--confirmed);
 }
 .suspected {
-  color: var(--warn);
+  color: var(--suspected);
 }
 .unverified {
   color: var(--muted);
 }
 .clean {
-  color: var(--ok);
+  color: var(--clean);
 }
 </style>
