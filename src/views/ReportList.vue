@@ -30,10 +30,17 @@ const sellerCount = computed(
   </section>
 
   <aside class="advice" aria-labelledby="advice-title">
-    <h2 id="advice-title">Bought a device from one of these sellers?</h2>
+    <h2 id="advice-title">Bought a Ledger in 2026? Take a look inside.</h2>
     <p>
-      Don't set it up. If you already have, treat its recovery phrase as exposed. Create a new
-      phrase on a device bought directly from Ledger and move your funds to it.
+      New sellers turn up every day, so don't rely on this list alone. Opening the case takes about
+      five minutes, and the photos in these reports show what to look for: extra wires, an added
+      board, or an antenna stuck inside the case. Check before you set the device up.
+    </p>
+    <p>
+      If you find one, don't use the device, and
+      <a :href="newCaseUrl" target="_blank" rel="noopener">report it</a>. If it was already set up,
+      treat its recovery phrase as exposed: create a new one on a device you trust and move your
+      funds to it.
     </p>
   </aside>
 
@@ -125,6 +132,9 @@ h1 {
 }
 .advice p {
   margin: 0;
+}
+.advice p + p {
+  margin-top: 0.6rem;
 }
 
 .register {
