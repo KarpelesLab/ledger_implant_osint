@@ -1,0 +1,55 @@
+{
+  "title": "Purple Ledger Nano X in a video shared by @kryptodegeny",
+  "reportedAt": "2026-10-12T13:27:07Z",
+  "device": {
+    "model": "Ledger Nano X",
+    "variant": "Purple case"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "status": "suspected",
+    "components": [
+      "Main board wrapped in yellow Kapton tape",
+      "Black board on the battery, with a fine wire loop and solder pad",
+      "Battery with a yellow flex tail"
+    ],
+    "notes": "An 88-second video of a purple Nano X being taken apart on a workbench, posted by a Polish crypto account as commentary on the implant reports. The main board is wrapped in yellow Kapton tape, and a black board with a fine wire sits on the battery. Neither is normal for a Nano X, but the parts can't be identified from the footage. The device still boots to Ledger's onboarding screen. The post doesn't say who filmed the video, or where the device was bought."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/kryptodegeny/status/2109636986793324657",
+      "author": "Krypto Degeneraci.",
+      "handle": "kryptodegeny",
+      "postedAt": "2026-10-12T13:27:07Z",
+      "text": "KUPUJESZ LEDGERA, A W ŚRODKU MASZ PODSŁUCH, KTÓRY KRADNIE TWOJE BITCOINY\n\nBadacze rozebrali zmodyfikowane Ledger Nano X i znaleźli w środku dodatkową elektronikę z modemem LTE i kartą SIM.\n\nI teraz najlepsze. Ten mały skurczybyk potrafi przechwycić 24 słowa seeda wyświetlane…\n\n(Polish: \"You buy a Ledger, and inside there's a bug that steals your bitcoins. Researchers took apart modified Ledger Nano X units and found extra electronics inside, with an LTE modem and a SIM card. And now the best part: this little rascal can intercept the 24 seed words displayed…\")"
+    }
+  ],
+  "images": [
+    {
+      "file": "frame-72s-battery-board.jpg",
+      "source": "https://x.com/kryptodegeny/status/2109636986793324657",
+      "caption": "Still from the video at 1:12: the OLED side of the board (left) and a black board with a fine wire loop on the battery (right)."
+    },
+    {
+      "file": "frame-23s-taped-board.jpg",
+      "source": "https://x.com/kryptodegeny/status/2109636986793324657",
+      "caption": "Still at 0:23: the main board wrapped in yellow Kapton tape, next to the battery."
+    },
+    {
+      "file": "frame-75s-powered-on.jpg",
+      "source": "https://x.com/kryptodegeny/status/2109636986793324657",
+      "caption": "Still at 1:15: the opened device still boots to Ledger's onboarding screen."
+    }
+  ],
+  "videos": [
+    {
+      "file": "video-2109636986793324657.mp4",
+      "poster": "video-2109636986793324657-poster.jpg",
+      "source": "https://x.com/kryptodegeny/status/2109636986793324657",
+      "original": "https://video.twimg.com/amplify_video/2109636883546333184/vid/avc1/1080x1080/scaegP-VfXLO1oNb.mp4",
+      "caption": "The full 88-second video, 1080p as posted. The original filmer is not credited."
+    }
+  ]
+}
