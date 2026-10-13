@@ -75,6 +75,18 @@ const purchaseRows = computed(() => {
               <code>{{ report.implant.marking }}</code>
             </dd>
           </template>
+          <template v-if="report.implant.analyzedBy">
+            <dt>Analyzed by</dt>
+            <dd>{{ report.implant.analyzedBy }}</dd>
+          </template>
+          <template v-if="report.implant.components?.length">
+            <dt>Components</dt>
+            <dd>
+              <ul class="components">
+                <li v-for="c in report.implant.components" :key="c">{{ c }}</li>
+              </ul>
+            </dd>
+          </template>
         </dl>
         <p v-if="report.implant.notes">{{ report.implant.notes }}</p>
       </section>
@@ -85,6 +97,7 @@ const purchaseRows = computed(() => {
       <ul class="sources">
         <li v-for="s in report.sources" :key="s.url">
           <a :href="s.url" target="_blank" rel="noopener noreferrer">
+            <template v-if="s.title">{{ s.title }} — </template>
             <template v-if="s.author">{{ s.author }}</template>
             <template v-if="s.handle"> (@{{ s.handle }})</template>
             <template v-if="!s.author && !s.handle">{{ s.url }}</template>
@@ -150,6 +163,10 @@ dt {
 dd {
   margin: 0;
   overflow-wrap: anywhere;
+}
+.components {
+  margin: 0;
+  padding-left: 1.1rem;
 }
 .sources {
   padding-left: 1.2rem;

@@ -1,0 +1,72 @@
+{
+  "title": "Ledger Flex from Metapod, Singapore airport",
+  "reportedAt": "2026-10-11T00:47:01Z",
+  "device": {
+    "model": "Ledger Flex"
+  },
+  "purchase": {
+    "retailer": "Metapod",
+    "store": "Singapore airport",
+    "city": "Singapore",
+    "country": "SG",
+    "date": "2026-06",
+    "dateNote": "\"in summer\" per the buyer",
+    "price": "$300, per the buyer (currency not stated)"
+  },
+  "implant": {
+    "version": "1.2",
+    "status": "confirmed",
+    "marking": "AC-A2201-FLEX-欧亚版-V1.2",
+    "analyzedBy": "Mark Karpelès (@MagicalTux)",
+    "components": ["STMicroelectronics STM32U575CIU6 MCU", "u.FL antenna connector"],
+    "notes": "The buyer never plugged the device in. They noticed scratches on the casing and sent it to @MagicalTux for teardown, which found an added flex PCB with an antenna lead on the back cover and a separate implant PCB."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/BenYorke/status/2109083315424891296",
+      "author": "Ben Yorke",
+      "handle": "BenYorke",
+      "postedAt": "2026-10-11T00:47:01Z",
+      "text": "I have a $300 @Ledger Flex that I bought from the Singapore airport in summer (Metapod, should be fine?)\n\nI never plugged it in but it looks like theres some scratches on the casing, an indication of potential tampering?\n\nAnyways theres no way i can trust it (or Ledger) now"
+    },
+    {
+      "url": "https://x.com/MagicalTux/status/2109916873689280900",
+      "author": "Mark Karpelès",
+      "handle": "MagicalTux",
+      "postedAt": "2026-10-13T07:59:17Z",
+      "text": "Ledger Flex sold at Singapore Airport confirmed to contain a spy implant!\n@BenYorke found suspicious marks on his @Ledger and sent it to me rather than using it, that was probably the best decision here."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Nf4FEFlgv3Q",
+      "title": "Spy implant found in Ledger Flex bought at Singapore airport",
+      "author": "Mark Karpeles",
+      "handle": "MagicalTux"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUT4AlBaYAA82Mw.jpg",
+      "source": "https://x.com/BenYorke/status/2109083315424891296",
+      "original": "https://pbs.twimg.com/media/HUT4AlBaYAA82Mw.jpg?name=orig",
+      "caption": "The buyer's photo: a scratch on the casing edge (red box), photographed on the retail box."
+    },
+    {
+      "file": "HUfscorbEAAWzfa.jpg",
+      "source": "https://x.com/MagicalTux/status/2109916873689280900",
+      "original": "https://pbs.twimg.com/media/HUfscorbEAAWzfa.jpg?name=orig",
+      "caption": "Close-up of damage at the seam between the casing and the back cover."
+    },
+    {
+      "file": "HUfsevTaMAAEd1l.jpg",
+      "source": "https://x.com/MagicalTux/status/2109916873689280900",
+      "original": "https://pbs.twimg.com/media/HUfsevTaMAAEd1l.jpg?name=orig",
+      "caption": "Opened device. The back cover carries the added flex marked \"AC-A2201-FLEX-欧亚版-V1.2\", with an antenna lead running to the device."
+    },
+    {
+      "file": "HUfshS5bUAAXQS1.jpg",
+      "source": "https://x.com/MagicalTux/status/2109916873689280900",
+      "original": "https://pbs.twimg.com/media/HUfshS5bUAAXQS1.jpg?name=orig",
+      "caption": "Implant PCB after removal: STM32U575 MCU, a large module, and a u.FL antenna connector."
+    }
+  ]
+}

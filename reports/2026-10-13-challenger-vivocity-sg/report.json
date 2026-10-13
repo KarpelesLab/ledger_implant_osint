@@ -18,7 +18,7 @@
   "implant": {
     "version": "1.2",
     "status": "confirmed",
-    "marking": "AO-A2201-FLEX-…-V1.2",
+    "marking": "AC-A2201-FLEX-…-V1.2",
     "notes": "An extra flex PCB with a coax antenna lead is attached to the inside of the back cover. Its silkscreen ends in \"V1.2\"; the Chinese characters in the middle are not legible in the photos."
   },
   "sources": [

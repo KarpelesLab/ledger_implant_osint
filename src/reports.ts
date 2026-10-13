@@ -2,6 +2,7 @@ export type ImplantStatus = 'confirmed' | 'suspected' | 'unverified' | 'clean'
 
 export interface Source {
   url: string
+  title?: string
   author?: string
   handle?: string
   postedAt?: string
@@ -28,7 +29,14 @@ export interface ReportData {
     dateNote?: string
     price?: string
   }
-  implant: { version?: string; status: ImplantStatus; marking?: string; notes?: string }
+  implant: {
+    version?: string
+    status: ImplantStatus
+    marking?: string
+    analyzedBy?: string
+    components?: string[]
+    notes?: string
+  }
   sources: Source[]
   images: ReportImage[]
 }
