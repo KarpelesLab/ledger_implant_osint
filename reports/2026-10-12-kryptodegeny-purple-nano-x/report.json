@@ -9,13 +9,15 @@
     "date": null
   },
   "implant": {
+    "generation": "Gen 2",
     "status": "confirmed",
     "components": [
+      "Flat antenna taped between the battery and the LTE module, with a fine feed wire and solder pad",
+      "LTE module, MCU and SIM, hidden under the antenna tape",
       "Main board wrapped in yellow Kapton tape",
-      "Black board on the battery, with a fine wire loop and solder pad",
-      "Battery with a yellow flex tail"
+      "Replacement battery with a yellow flex tail"
     ],
-    "notes": "An 88-second video of a purple Nano X being taken apart on a workbench, posted by a Polish crypto account as commentary on the implant reports. The main board is wrapped in yellow Kapton tape, and a black board with a fine wire sits on the battery. Neither is normal for a Nano X. Mark Karpelès (@MagicalTux) confirmed it as an implant on 14 Oct 2026, though the individual parts can't be identified from the footage. The device still boots to Ledger's onboarding screen. The post doesn't say who filmed the video, or where the device was bought."
+    "notes": "An 88-second video of a purple Nano X being taken apart on a workbench, posted by a Polish crypto account as commentary on the implant reports. Mark Karpelès (@MagicalTux) identified it on 14 Oct 2026 as a Gen 2 implant, the same build as Tibane Labs' Specimen A. The black part on the battery is the flat antenna tape, laid between the battery and the LTE module, and it hides the MCU and the SIM. The main board is wrapped in yellow Kapton tape. The device still boots to Ledger's onboarding screen. The post doesn't say who filmed the video, or where the device was bought."
   },
   "sources": [
     {
@@ -30,7 +32,7 @@
     {
       "file": "frame-72s-battery-board.jpg",
       "source": "https://x.com/kryptodegeny/status/2109636986793324657",
-      "caption": "Still from the video at 1:12: the OLED side of the board (left) and a black board with a fine wire loop on the battery (right)."
+      "caption": "Still from the video at 1:12: the OLED side of the board (left), and the battery (right) with the flat antenna tape and its feed wire laid over the LTE module, hiding the MCU and the SIM."
     },
     {
       "file": "frame-23s-taped-board.jpg",
