@@ -1,0 +1,66 @@
+{
+  "title": "Ledger Flex from Challenger VivoCity, Singapore",
+  "reportedAt": "2026-10-13T12:45:53Z",
+  "device": {
+    "model": "Ledger Flex",
+    "variant": "Bitcoin Limited Edition (Orange)",
+    "ean": "3760027785201"
+  },
+  "purchase": {
+    "retailer": "Challenger",
+    "store": "VivoCity",
+    "city": "Singapore",
+    "country": "SG",
+    "date": null,
+    "dateNote": "\"literally last week\" (relative to the 2026-10-13 post)",
+    "price": "S$399.00 (member price S$389.00), from the shelf sticker"
+  },
+  "implant": {
+    "version": "1.2",
+    "status": "confirmed",
+    "marking": "AO-A2201-FLEX-…-V1.2",
+    "notes": "An extra flex PCB with a coax antenna lead is attached to the inside of the back cover. Its silkscreen ends in \"V1.2\"; the Chinese characters in the middle are not legible in the photos."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/effdog_/status/2109988996462125314",
+      "author": "Era",
+      "handle": "effdog_",
+      "postedAt": "2026-10-13T12:45:53Z",
+      "text": "bought from Challenger Singapore Vivo city unit, literally last week.\n\nseems like this is compromised too.\n\n@BenYorke @MagicalTux please confirm"
+    },
+    {
+      "url": "https://x.com/effdog_/status/2110005139260240353",
+      "author": "Era",
+      "handle": "effdog_",
+      "postedAt": "2026-10-13T13:50:01Z",
+      "text": "@BenYorke @MagicalTux more pics. @Ledger_Support @Ledger"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUgusP1aMAAif7V.jpg",
+      "source": "https://x.com/effdog_/status/2109988996462125314",
+      "original": "https://pbs.twimg.com/media/HUgusP1aMAAif7V.jpg?name=orig",
+      "caption": "Device opened, with the back cover lifted off the internals."
+    },
+    {
+      "file": "HUg-YYxa8AARIVP.jpg",
+      "source": "https://x.com/effdog_/status/2110005139260240353",
+      "original": "https://pbs.twimg.com/media/HUg-YYxa8AARIVP.jpg?name=orig",
+      "caption": "Opened device on its retail box. The Challenger price sticker is visible, and so is the extra flex marked \"…-V1.2\" with its antenna lead."
+    },
+    {
+      "file": "HUg-Zy1bcAAbW5f.jpg",
+      "source": "https://x.com/effdog_/status/2110005139260240353",
+      "original": "https://pbs.twimg.com/media/HUg-Zy1bcAAbW5f.jpg?name=orig",
+      "caption": "Outside of the back cover, partly opened."
+    },
+    {
+      "file": "HUg-buxaQAA5ll4.jpg",
+      "source": "https://x.com/effdog_/status/2110005139260240353",
+      "original": "https://pbs.twimg.com/media/HUg-buxaQAA5ll4.jpg?name=orig",
+      "caption": "Inside of the back cover, showing the added flex PCB and antenna lead next to the main board."
+    }
+  ]
+}

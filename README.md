@@ -1,48 +1,32 @@
-# ledger_implant_osint
+# Ledger Implant OSINT
 
-This template should help get you started developing with Vue 3 in Vite.
+**Live site: https://karpeleslab.github.io/ledger_implant_osint/**
 
-## Recommended IDE Setup
+This project tracks publicly reported Ledger devices that were found with hardware implants. The reports come from posts and photos published by different people. Each entry records where the device was bought, the model, the implant version (if known), and links back to the original sources. Every picture is archived in this repo.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Adding a report
 
-## Recommended Browser Setup
+Each report is a folder under `reports/`, named `YYYY-MM-DD-<retailer>-<location>`:
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+```
+reports/2026-10-13-challenger-vivocity-sg/
+  report.json      # report data (see src/reports.ts for the schema)
+  *.jpg            # pictures, stored with Git LFS
+```
 
-## Type Support for `.vue` Imports in TS
+- Use the original-size pictures. For X/Twitter media, add `?name=orig` to the URL.
+- In `report.json`, list each picture with its source post and original URL.
+- `implant.status` is one of `confirmed`, `suspected`, `unverified` or `clean`.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+Pictures are stored with [Git LFS](https://git-lfs.com/), so run `git lfs install` once before cloning or committing.
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## Development
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
+npm run dev      # local dev server
+npm run build    # type-check and build to dist/
 npm run lint
 ```
+
+Every push to `master` is deployed to GitHub Pages by `.github/workflows/deploy.yml`.
