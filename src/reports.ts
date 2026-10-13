@@ -37,6 +37,8 @@ export interface ReportData {
     date: string | null
     dateNote?: string
     shippedFrom?: string
+    /** Wholesaler that supplied the seller, when known. */
+    distributor?: string
     price?: string
   }
   implant: {
@@ -145,7 +147,7 @@ export function summary(r: ReportData): string {
   const at = [p.store, place(p)].filter(Boolean).join(', ')
   let s = `${r.device.model} bought from ${p.retailer}`
   if (at) s += ` (${at})`
-  if (p.date) s += ` in ${formatDate(p.date)}`
+  if (p.date) s += `${p.date.length > 7 ? ' on' : ' in'} ${formatDate(p.date)}`
   if (p.shippedFrom) s += `, shipped from ${p.shippedFrom}`
   return s + '.'
 }

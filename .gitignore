@@ -37,3 +37,6 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# LFS cache key written by the deploy workflow
+.lfs-assets-id

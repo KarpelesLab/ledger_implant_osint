@@ -1,0 +1,62 @@
+{
+  "title": "Ledger Nano X from MediaMarkt, Germany (second device)",
+  "reportedAt": "2026-10-12T13:17:18Z",
+  "device": {
+    "model": "Ledger Nano X",
+    "variant": "Onyx Black (LNX-DEON), per the receipt"
+  },
+  "purchase": {
+    "retailer": "MediaMarkt",
+    "distributor": "Aqipa GmbH, per store records",
+    "country": "DE",
+    "date": "2026-10-12",
+    "dateNote": "Germany is inferred from the receipt, which is in German and charges 19% VAT. It was a different store from the first device, and an employee said the unit was not a return."
+  },
+  "implant": {
+    "status": "confirmed",
+    "components": [
+      "Printed antenna inside the case end, with the same two-line marking layout as the first device (too blurry to read)",
+      "Red jumper wires from the Nano X board to a small board on the battery",
+      "Replacement battery",
+      "LTE module, per the buyer"
+    ],
+    "notes": "Johannes (@0xJohannes_) bought this second device from a different MediaMarkt store and filmed the unboxing, from the receipt and sealed box to the opened case. He says it is modified \"in the exact same manner\" as the first, and the video's final frames match the first device's photos. He sent it to Ledger for analysis."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/0xJohannes_/status/2109634513957527974",
+      "author": "Johannes",
+      "handle": "0xJohannes_",
+      "postedAt": "2026-10-12T13:17:17Z",
+      "text": "UPDATE: I can confirm that the Ledger supply chain is compromised in Europe as well. @Ledger should initiate an immediate product recall to protect users.\n\nI just purchased a second device from a different Mediamarkt location today, recorded the unboxing process, and discovered spyware once again (video linked in the second tweet).\n\nThe device was compromised in the exact same manner, featuring identical modifications (such as additional cables and an LTE module). This indicates its a widespread issue rather than an isolated incident, potentially affecting Ledger inventory across MediaMarkt and Saturn stores throughout Europe (comprising over 1,000 stores across 11 countries).\n\nMy initial hypothesis was that these devices were returns that looked unopened to the employees and were just sold again as new however, a MediaMarkt employee confirmed that the device I purchased was not a return, and that returned Ledgers are sent directly back to the manufacturer rather than resold.\n\nStore records show the inventory originated from Aqipa GmbH. While Ledger's CTO was unsure if Aqipa serves as the direct distributor between Ledger and MediaMarkt, it appears to be the case. Given that Aqipa distributes across Europe, any physical retail store receiving stock through them may be at risk.\n\nI sent the first ledger to mark and the second one is going to ledger now, so that they can analyse it.\nIf you purchased a ledger from anyone other than the official ledger store, make sure to check your device!!"
+    },
+    {
+      "url": "https://x.com/0xJohannes_/status/2109634517296148568",
+      "author": "Johannes",
+      "handle": "0xJohannes_",
+      "postedAt": "2026-10-12T13:17:18Z",
+      "text": "Here is the video proof, fresh device, directly from the store, video quality is kinda bad, sorry"
+    }
+  ],
+  "images": [
+    {
+      "file": "frame-150s-4k.jpg",
+      "source": "https://x.com/0xJohannes_/status/2109634517296148568",
+      "caption": "Still from the end of the 4K video: the freshly opened device, with red jumper wires, a replacement battery and a printed antenna in the case end."
+    },
+    {
+      "file": "frame-20s-receipt.jpg",
+      "source": "https://x.com/0xJohannes_/status/2109634517296148568",
+      "caption": "Still from the 4K video: the receipt lists \"LEDGER SAS, LNX-DEON NANO X ONYX BLACK\", priced in EUR with 19% VAT."
+    }
+  ],
+  "videos": [
+    {
+      "file": "video-2109634517296148568.mp4",
+      "poster": "video-2109634517296148568-poster.jpg",
+      "source": "https://x.com/0xJohannes_/status/2109634517296148568",
+      "original": "https://video.twimg.com/amplify_video/2109630455293079552/vid/avc1/3840x2160/QaQNvcARR8qIf_Wa.mp4",
+      "caption": "The full unboxing, 2½ minutes: receipt, sealed box, opening the case. This is a 720p copy; the original is 4K. Johannes pixelated a personal detail at about 1:40."
+    }
+  ]
+}

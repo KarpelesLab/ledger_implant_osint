@@ -19,8 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      # Cache LFS objects so each deploy only downloads new pictures and videos,
+      # which keeps the repo's LFS bandwidth quota in check.
+      - run: git lfs ls-files --long | cut -d' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v6
         with:
-          lfs: true
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - run: git lfs pull
       - uses: actions/setup-node@v7
         with:
           node-version: 24

@@ -1,0 +1,66 @@
+{
+  "title": "Ledger Nano X from MediaMarkt (first device)",
+  "reportedAt": "2026-10-12T04:27:00Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "retailer": "MediaMarkt",
+    "distributor": "Aqipa GmbH, per store records",
+    "date": null,
+    "dateNote": "\"Recently\", before 12 Oct 2026, in Europe. The store location wasn't given."
+  },
+  "implant": {
+    "status": "confirmed",
+    "marking": "AC-A2205-NANO-X-欧亚版-V1.0",
+    "components": [
+      "Printed antenna inside the case, marked AC-A2205-NANO-X 欧亚版-V1.0, with a coax lead",
+      "Red jumper wires from the Nano X board to a small board on the battery",
+      "Replacement battery: MB 281544, 3.7 V 130 mAh 0.481 Wh, dated 2026-04-03",
+      "LTE module, per the buyer"
+    ],
+    "notes": "The buyer, Johannes (@0xJohannes_), found extra wires, a printed antenna in the case and what he calls an LTE module. He says the device passed Ledger's genuine check, and that he sent it to Mark Karpelès (@MagicalTux) for analysis. Johannes's original post was not located. The clearest photos come from a repost by @CryptosR_Us. The antenna marking follows the same AC-A2xxx scheme as the Flex (AC-A2201-FLEX) and Nano X (AC-A2016-NANO) antennas in other reports."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/CryptosR_Us/status/2109501061044248627",
+      "author": "CryptosRus",
+      "handle": "CryptosR_Us",
+      "postedAt": "2026-10-12T04:27:00Z",
+      "text": "ALERT: The Ledger implant scare may have reached Europe. ⚠️\n\nX user Johannes (4, 4) says he found a hardware implant in a Ledger Nano X he recently bought at MediaMarkt. He says it passed Ledger's checks, but his funds weren't touched."
+    },
+    {
+      "url": "https://x.com/0xJohannes_/status/2109634513957527974",
+      "author": "Johannes",
+      "handle": "0xJohannes_",
+      "postedAt": "2026-10-12T13:17:17Z",
+      "text": "UPDATE: I can confirm that the Ledger supply chain is compromised in Europe as well. […] I just purchased a second device from a different Mediamarkt location today […] Store records show the inventory originated from Aqipa GmbH. […] I sent the first ledger to mark and the second one is going to ledger now, so that they can analyse it."
+    }
+  ],
+  "images": [
+    {
+      "file": "HUY_NTQaYAAvlBD.jpg",
+      "source": "https://x.com/CryptosR_Us/status/2109501061044248627",
+      "original": "https://pbs.twimg.com/media/HUY_NTQaYAAvlBD.jpg?name=orig",
+      "caption": "Opened device: red jumper wires run from the Nano X board to a small board on the replacement 130 mAh battery (dated 2026-04-03). The printed antenna in the case end is marked AC-A2205-NANO-X 欧亚版-V1.0."
+    },
+    {
+      "file": "HUbrFdJXUAARwOS.jpg",
+      "source": "https://x.com/0xJohannes_/status/2109634513957527974",
+      "original": "https://pbs.twimg.com/media/HUbrFdJXUAARwOS.jpg?name=orig",
+      "caption": "Johannes's annotated photos: the extra wires and antenna (left), and the board he identifies as the LTE module (right)."
+    },
+    {
+      "file": "HUbs_CzWgAAtA-7.png",
+      "source": "https://x.com/0xJohannes_/status/2109634513957527974",
+      "original": "https://pbs.twimg.com/media/HUbs_CzWgAAtA-7.png?name=orig",
+      "caption": "Ledger Nano X boxes on sale in a MediaMarkt store, inside theft-protection cases. The packaging is in German."
+    },
+    {
+      "file": "HUY_NTLbUAAe1yJ.jpg",
+      "source": "https://x.com/CryptosR_Us/status/2109501061044248627",
+      "original": "https://pbs.twimg.com/media/HUY_NTLbUAAe1yJ.jpg?name=orig",
+      "caption": "Also in the repost: a Nano X taken apart, with a black board and a Dongguan Bimo 100 mAh battery dated 2020-07-17. The post doesn't say which device this is. It looks like an unmodified unit for comparison."
+    }
+  ]
+}

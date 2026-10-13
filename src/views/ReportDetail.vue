@@ -19,6 +19,7 @@ const purchaseRows = computed(() => {
     ['When', p.date ? formatDate(p.date) : p.dateNote],
     ['Note', p.date ? p.dateNote : undefined],
     ['Shipped from', p.shippedFrom],
+    ['Distributor', p.distributor],
     ['Price', p.price],
   ].filter((row): row is [string, string] => !!row[1])
 })
