@@ -9,13 +9,13 @@
     "date": null
   },
   "implant": {
-    "status": "suspected",
+    "status": "confirmed",
     "components": [
       "Main board wrapped in yellow Kapton tape",
       "Black board on the battery, with a fine wire loop and solder pad",
       "Battery with a yellow flex tail"
     ],
-    "notes": "An 88-second video of a purple Nano X being taken apart on a workbench, posted by a Polish crypto account as commentary on the implant reports. The main board is wrapped in yellow Kapton tape, and a black board with a fine wire sits on the battery. Neither is normal for a Nano X, but the parts can't be identified from the footage. The device still boots to Ledger's onboarding screen. The post doesn't say who filmed the video, or where the device was bought."
+    "notes": "An 88-second video of a purple Nano X being taken apart on a workbench, posted by a Polish crypto account as commentary on the implant reports. The main board is wrapped in yellow Kapton tape, and a black board with a fine wire sits on the battery. Neither is normal for a Nano X. Mark Karpelès (@MagicalTux) confirmed it as an implant on 14 Oct 2026, though the individual parts can't be identified from the footage. The device still boots to Ledger's onboarding screen. The post doesn't say who filmed the video, or where the device was bought."
   },
   "sources": [
     {
