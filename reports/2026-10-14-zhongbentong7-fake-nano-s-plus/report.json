@@ -1,0 +1,64 @@
+{
+  "title": "Counterfeit Ledger Nano S Plus shown by @zhongbentong7",
+  "reportedAt": "2026-10-14T01:28:04Z",
+  "device": {
+    "model": "Ledger Nano S Plus",
+    "variant": "Counterfeit board"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "status": "counterfeit",
+    "analyzedBy": "Mark Karpelès (@MagicalTux)",
+    "components": [
+      "Single QFN-64 chip with its markings replaced by a blank square logo, in place of Ledger's ST33 secure element and STM32 MCU",
+      "Crystal oscillator (X1) and two board-mounted buttons (S1, S2) on the component side",
+      "USB-C connector at the same end as the genuine board, with a fine-pitch display connector",
+      "Plain copper back with no test points and no Data Matrix label"
+    ],
+    "notes": "X user @zhongbentong7 asked Mark Karpelès (@MagicalTux) to check two opened Nano S Plus boards, which they marked 1 and 2 in red. Board 1 has the parts and layout of a genuine Nano S Plus: two ST chips (the secure element and the MCU), numbered test points on the back, and a Data Matrix label. Board 2 has a different layout, built around one chip with its markings replaced by a blank square logo. It has no secure element, so it can't protect a recovery phrase. Mark Karpelès replied that the second device is a known fake, which Ledger Wallet rejects as not genuine. It's a fake device, not an implant added to a genuine one. The post doesn't say where either device was bought."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/zhongbentong7/status/2110180808111857667",
+      "author": "李通",
+      "handle": "zhongbentong7",
+      "postedAt": "2026-10-14T01:28:04Z",
+      "text": "@MagicalTux Could you guys help me take a look at these two devices and let me know if everything looks good? Thanks!"
+    },
+    {
+      "url": "https://x.com/MagicalTux/status/2110207578248777915",
+      "author": "Mark Karpelès",
+      "handle": "MagicalTux",
+      "postedAt": "2026-10-14T03:14:27Z",
+      "text": "@zhongbentong7 That second device is *not* clean. This is a known fake, which Ledger Wallet will reject as non genuine."
+    }
+  ],
+  "images": [
+    {
+      "file": "HUjePtTbAAAzreX.jpg",
+      "source": "https://x.com/zhongbentong7/status/2110180808111857667",
+      "original": "https://pbs.twimg.com/media/HUjePtTbAAAzreX.jpg?name=orig",
+      "caption": "Board 2, the fake: one QFN-64 chip with a blank square logo where the part markings should be, a crystal (X1) and two buttons (S1, S2), with the USB-C connector on the right."
+    },
+    {
+      "file": "HUjePtSbgAApTNt.jpg",
+      "source": "https://x.com/zhongbentong7/status/2110180808111857667",
+      "original": "https://pbs.twimg.com/media/HUjePtSbgAApTNt.jpg?name=orig",
+      "caption": "Board 2 from the back, still attached to its display: plain traces, with no test points and no Data Matrix label."
+    },
+    {
+      "file": "HUjePsnbYAAgtFL.jpg",
+      "source": "https://x.com/zhongbentong7/status/2110180808111857667",
+      "original": "https://pbs.twimg.com/media/HUjePsnbYAAgtFL.jpg?name=orig",
+      "caption": "For comparison, board 1 from the same post, which looks genuine: two ST chips, the secure element and the MCU."
+    },
+    {
+      "file": "HUjePtTasAA2pl8.jpg",
+      "source": "https://x.com/zhongbentong7/status/2110180808111857667",
+      "original": "https://pbs.twimg.com/media/HUjePtTasAA2pl8.jpg?name=orig",
+      "caption": "Board 1 from the back: numbered test points (TP1 to TP29), the display connector (J1) and a Data Matrix label."
+    }
+  ]
+}

@@ -29,6 +29,9 @@ defineProps<{ status: ImplantStatus }>()
 .suspected {
   color: var(--suspected);
 }
+.counterfeit {
+  color: var(--confirmed);
+}
 .unverified {
   color: var(--muted);
 }

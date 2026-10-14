@@ -21,7 +21,7 @@ reports/2026-10-13-challenger-vivocity-sg/
 - Use the original-size pictures. For X/Twitter media, add `?name=orig` to the URL.
 - In `report.json`, list each picture with its source post and original URL.
 - List videos under `videos`, each with a `poster` still frame (for example `ffmpeg -ss 20 -i video.mp4 -frames:v 1 poster.jpg`).
-- `implant.status` is one of `confirmed`, `suspected`, `unverified` or `clean`.
+- `implant.status` is one of `confirmed`, `suspected`, `counterfeit` (a fake device rather than an implant), `unverified` or `clean`.
 - When the modem's label or Data Matrix code is legible, record its IMEI in `implant.imei` and check the Luhn check digit.
 
 Pictures are stored with [Git LFS](https://git-lfs.com/), so run `git lfs install` once before cloning or committing.

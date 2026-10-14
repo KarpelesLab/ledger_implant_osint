@@ -1,4 +1,4 @@
-export type ImplantStatus = 'confirmed' | 'suspected' | 'unverified' | 'clean'
+export type ImplantStatus = 'confirmed' | 'suspected' | 'counterfeit' | 'unverified' | 'clean'
 
 export interface Source {
   url: string
@@ -103,6 +103,7 @@ export function findReport(id: string): Report | undefined {
 export const statusLabel: Record<ImplantStatus, string> = {
   confirmed: 'Implant confirmed',
   suspected: 'Implant suspected',
+  counterfeit: 'Counterfeit device',
   unverified: 'Not yet verified',
   clean: 'No implant found',
 }
