@@ -1,11 +1,15 @@
 {
-  "title": "Ledger Nano X shared by @coinjoined",
+  "title": "Ledger Nano X from MediaMarkt Trier, shared by @coinjoined",
   "reportedAt": "2026-10-13T15:47:09Z",
   "device": {
     "model": "Ledger Nano X"
   },
   "purchase": {
-    "date": null
+    "retailer": "MediaMarkt",
+    "city": "Trier",
+    "country": "DE",
+    "date": "2026-10-13",
+    "dateNote": "Inferred: @coinjoined posted a photo of the store that morning as \"mystery shopping\", named the city as Trier, and posted the opened implant the same afternoon. The posts don't say outright that this device came from that visit."
   },
   "implant": {
     "status": "confirmed",
@@ -17,9 +21,23 @@
       "Small board on the battery, partly legible marking …X-1350-D",
       "Twisted enamelled wires from the battery board to the Nano X board, next to the USB-C connector"
     ],
-    "notes": "The post shows three photos of an implanted Nano X and one of a genuine Nano X for comparison. It doesn't say who owns the device or where it was bought. The replacement battery has the same label and date as the first MediaMarkt device. The antenna is the same part number, AC-A2205, as that device's antenna (AC-A2205-NANO-X-欧亚版-V1.0), but a later revision, V1.1. The post lists the allegedly affected resellers so far as MediaMarkt and Saturn in Germany, Cryptobilis in Malaysia, Ozon in Russia, and Singapore airport."
+    "notes": "The post shows three photos of an implanted Nano X and one of a genuine Nano X for comparison. That morning, @coinjoined had posted a photo of a MediaMarkt store in Trier, Germany, as \"mystery shopping\", so the device was most likely bought there. The replacement battery has the same label and date as the first MediaMarkt device. The antenna is the same part number, AC-A2205, as that device's antenna (AC-A2205-NANO-X-欧亚版-V1.0), but a later revision, V1.1. The post lists the allegedly affected resellers so far as MediaMarkt and Saturn in Germany, Cryptobilis in Malaysia, Ozon in Russia, and Singapore airport."
   },
   "sources": [
+    {
+      "url": "https://x.com/coinjoined/status/2109909818852970772",
+      "author": "Coinjoined Chris",
+      "handle": "coinjoined",
+      "postedAt": "2026-10-13T07:31:15Z",
+      "text": "On today's episode of mystery shopping..."
+    },
+    {
+      "url": "https://x.com/coinjoined/status/2109982198015140252",
+      "author": "Coinjoined Chris",
+      "handle": "coinjoined",
+      "postedAt": "2026-10-13T12:18:52Z",
+      "text": "@0xJohannes_ Trier\n\n(Reply to \"Curious what city is this?\")"
+    },
     {
       "url": "https://x.com/coinjoined/status/2110034615247245682",
       "author": "Coinjoined Chris",
@@ -52,6 +70,12 @@
       "source": "https://x.com/coinjoined/status/2110034615247245682",
       "original": "https://pbs.twimg.com/media/HUhZTHDX0AAT4Ve.jpg?name=orig",
       "caption": "For comparison, the post's last photo: a genuine Nano X, with no extra wires or boards and its original 100 mAh battery."
+    },
+    {
+      "file": "HUfnr2SWQAAkfzL.jpg",
+      "source": "https://x.com/coinjoined/status/2109909818852970772",
+      "original": "https://pbs.twimg.com/media/HUfnr2SWQAAkfzL.jpg?name=orig",
+      "caption": "The MediaMarkt store in Trier, posted that morning as \"mystery shopping\"."
     }
   ]
 }
