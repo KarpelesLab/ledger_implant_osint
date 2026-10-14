@@ -23,6 +23,7 @@ reports/2026-10-13-challenger-vivocity-sg/
 - List videos under `videos`, each with a `poster` still frame (for example `ffmpeg -ss 20 -i video.mp4 -frames:v 1 poster.jpg`).
 - `implant.status` is one of `confirmed`, `suspected`, `counterfeit` (a fake device rather than an implant), `unverified` or `clean`.
 - When the modem's label or Data Matrix code is legible, record its IMEI in `implant.imei` and check the Luhn check digit.
+- Link previews use a 1200×630 crop from the centre of the first picture. If that crop misses the point, set `preview` to pick another picture (`"file"`) or crop edge (`"position": "top"`).
 
 Pictures are stored with [Git LFS](https://git-lfs.com/), so run `git lfs install` once before cloning or committing.
 

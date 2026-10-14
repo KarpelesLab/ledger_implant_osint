@@ -63,5 +63,8 @@
       "original": "https://pbs.twimg.com/media/HUgy1vCboAAMSBM.jpg?name=orig",
       "caption": "Top: the counterfeit board, with one Ledger-logo chip, the 40 MHz crystal (X1) and buttons on the lower edge. Bottom: the genuine board from Ledger's support article, with the STM32F042K6 (U2), the ST33 secure element (U4), and buttons SW1 and SW2 on the upper edge."
     }
-  ]
+  ],
+  "preview": {
+    "position": "top"
+  }
 }
