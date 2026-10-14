@@ -12,11 +12,12 @@ const sellerCount = computed(
 
 <template>
   <section class="intro">
-    <h1>Tampered Ledger wallets, and where they were bought</h1>
+    <h1>Tampered and fake Ledger wallets, and where they were bought</h1>
     <p class="lede">
-      Each report here is a Ledger device found with an extra circuit inside, added after it left
+      Most reports here are Ledger devices found with an extra circuit inside, added after they left
       the factory. The circuits found so far carry their own antenna. On the units examined in
-      detail, they read the recovery phrase off the screen.
+      detail, they read the recovery phrase off the screen. The rest are counterfeits: fake devices
+      made to look like a Ledger, with no secure element to protect the recovery phrase.
     </p>
     <p class="count">
       {{ reports.length }} devices from {{ sellerCount }} named sellers so far. Every report links
