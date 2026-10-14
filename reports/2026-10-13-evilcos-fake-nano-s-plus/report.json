@@ -1,0 +1,67 @@
+{
+  "title": "Counterfeit Ledger Nano S Plus opened by Cos (@evilcos)",
+  "reportedAt": "2026-10-13T12:59:10Z",
+  "device": {
+    "model": "Ledger Nano S Plus",
+    "variant": "Counterfeit board"
+  },
+  "purchase": {
+    "date": null
+  },
+  "implant": {
+    "status": "counterfeit",
+    "analyzedBy": "Yishi (@ohyishi), Mark Karpelès (@MagicalTux)",
+    "components": [
+      "One QFN chip printed with the Ledger logo and no part number, in place of the ST33 secure element (U4) and STM32F042K6 MCU (U2)",
+      "40 MHz crystal (X1, marked 40.000), which suggests an Espressif ESP32-family chip; the genuine STM32F042 needs no crystal",
+      "Buttons on the lower edge, labelled S2, where the genuine board has SW1 and SW2 on the upper edge",
+      "No board-maker markings, where the genuine board has E232940, JVE-M2 and a JOVE3 2203 date code"
+    ],
+    "notes": "Cos (@evilcos) opened a Nano S Plus and posted its board next to the board in Ledger's official support article, asking where the backdoor part was. Yishi (@ohyishi) replied that it is a counterfeit: the whole board is different, and it has no secure element. The one main chip carries a Ledger logo instead of a maker's name and part number, and the 40 MHz crystal points to an ESP32. Yishi also linked it to fake Nano S Plus units reported in spring 2026. A Brazilian researcher bought one of those on a Chinese e-commerce site. Its chip markings were ground off, and its firmware called itself \"Nano S+ V2.1\". It stored the PIN and recovery phrase in plain text and sent them to the attackers' server. A QR code in the box led to a fake Ledger Live that showed a fake genuineness check. Cos agreed this device is from that wave, and said it still worked when tested. Mark Karpelès (@MagicalTux) replied that the board has no remote communication like the spy implants. He said it would likely show as not genuine in Ledger Wallet, and might give a predetermined seed. This is the same board as @zhongbentong7's second device. Cos didn't say where it was bought."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/evilcos/status/2109992339284566254",
+      "author": "Cos(余弦)",
+      "handle": "evilcos",
+      "postedAt": "2026-10-13T12:59:10Z",
+      "text": "我刚刚拆了一个 Ledger Nano S Plus（图上），和官方 PCB 正面（图下）居然如此不同…那么后门元件在哪？…或者我遗漏了什么？@Ledger 😵‍💫\n\nhttps://support.ledger.com/zh-CN/article/4404382029329-zd\n\n(Chinese: \"I just took apart a Ledger Nano S Plus (top picture), and it's surprisingly different from the front of the official PCB (bottom picture)… So where is the backdoor part? …Or did I miss something?\")"
+    },
+    {
+      "url": "https://x.com/ohyishi/status/2109995008401256927",
+      "author": "Yishi",
+      "handle": "ohyishi",
+      "postedAt": "2026-10-13T13:09:46Z",
+      "text": "这个很像假货。…\n\n(Chinese, summarised: \"This looks like a fake.\" It has no secure element: a genuine Nano S Plus has two ST chips, the STM32F042K6 (U2) and the ST33 (U4). The main chip has only a Ledger logo and no part number. The extra 40 MHz crystal (X1, marked 40.000) points to an Espressif ESP32. The layout and silkscreen are different: the genuine board has SW1 and SW2 on the upper edge and the board-maker marks E232940 and JOVE3 2203.)"
+    },
+    {
+      "url": "https://x.com/ohyishi/status/2109997088507629945",
+      "author": "Yishi",
+      "handle": "ohyishi",
+      "postedAt": "2026-10-13T13:18:02Z",
+      "text": "今年春天有人公开过同一类假 Nano S Plus。…\n\n(Chinese, summarised: The same kind of fake Nano S Plus was made public this spring. A Brazilian security researcher bought one on a Chinese e-commerce site. Its chip markings were ground off, and the firmware reported itself as \"Nano S+ V2.1\", with Espressif shown as the maker. It replaces the secure element with an ESP32, stores the PIN and recovery phrase in plain text, and sends them to the attackers' server. A QR code in the box leads to a fake Ledger Live with a fake genuineness check. This one has a printed Ledger logo instead of ground-off markings, so it may be a newer version from the same group, or another copy.)"
+    },
+    {
+      "url": "https://x.com/evilcos/status/2109995904258498874",
+      "author": "Cos(余弦)",
+      "handle": "evilcos",
+      "postedAt": "2026-10-13T13:13:20Z",
+      "text": "@ohyishi @Ledger 我测试了居然还可以用，不过确实是假货，我搞到的另一种样本…\n\n(Chinese: \"I tested it and it actually still works, but it really is a fake, another kind of sample I got…\")"
+    },
+    {
+      "url": "https://x.com/MagicalTux/status/2110007293651857423",
+      "author": "Mark Karpelès",
+      "handle": "MagicalTux",
+      "postedAt": "2026-10-13T13:58:35Z",
+      "text": "@evilcos @Ledger This is not a valid board for the Ledger S plus, but it doesn't have the remote communication capabilities of the spy implants. This is likely going to show as \"not genuine\" in ledger wallet, and will give you a predetermined seed or something like that."
+    }
+  ],
+  "images": [
+    {
+      "file": "HUgy1vCboAAMSBM.jpg",
+      "source": "https://x.com/evilcos/status/2109992339284566254",
+      "original": "https://pbs.twimg.com/media/HUgy1vCboAAMSBM.jpg?name=orig",
+      "caption": "Top: the counterfeit board, with one Ledger-logo chip, the 40 MHz crystal (X1) and buttons on the lower edge. Bottom: the genuine board from Ledger's support article, with the STM32F042K6 (U2), the ST33 secure element (U4), and buttons SW1 and SW2 on the upper edge."
+    }
+  ]
+}

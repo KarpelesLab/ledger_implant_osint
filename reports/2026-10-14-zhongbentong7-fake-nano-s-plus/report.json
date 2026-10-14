@@ -12,12 +12,12 @@
     "status": "counterfeit",
     "analyzedBy": "Mark Karpelès (@MagicalTux)",
     "components": [
-      "Single QFN-64 chip with its markings replaced by a blank square logo, in place of Ledger's ST33 secure element and STM32 MCU",
-      "Crystal oscillator (X1) and two board-mounted buttons (S1, S2) on the component side",
+      "One QFN chip printed with the Ledger logo and no part number, in place of Ledger's ST33 secure element and STM32 MCU",
+      "Crystal oscillator (X1), and buttons along the edge labelled S2, where the genuine board has SW1 and SW2",
       "USB-C connector at the same end as the genuine board, with a fine-pitch display connector",
       "Plain copper back with no test points and no Data Matrix label"
     ],
-    "notes": "X user @zhongbentong7 asked Mark Karpelès (@MagicalTux) to check two opened Nano S Plus boards, which they marked 1 and 2 in red. Board 1 has the parts and layout of a genuine Nano S Plus: two ST chips (the secure element and the MCU), numbered test points on the back, and a Data Matrix label. Board 2 has a different layout, built around one chip with its markings replaced by a blank square logo. It has no secure element, so it can't protect a recovery phrase. Mark Karpelès replied that the second device is a known fake, which Ledger Wallet rejects as not genuine. It's a fake device, not an implant added to a genuine one. The post doesn't say where either device was bought."
+    "notes": "X user @zhongbentong7 asked Mark Karpelès (@MagicalTux) to check two opened Nano S Plus boards, which they marked 1 and 2 in red. Board 1 has the parts and layout of a genuine Nano S Plus: two ST chips (the secure element and the MCU), numbered test points on the back, and a Data Matrix label. Board 2 has a different layout, built around one chip that carries a Ledger logo instead of a maker's name and part number. It has no secure element, so it can't protect a recovery phrase. Mark Karpelès replied that the second device is a known fake, which Ledger Wallet rejects as not genuine. It's a fake device, not an implant added to a genuine one. It's the same counterfeit board that Cos (@evilcos) opened the day before. The post doesn't say where either device was bought."
   },
   "sources": [
     {
@@ -40,7 +40,7 @@
       "file": "HUjePtTbAAAzreX.jpg",
       "source": "https://x.com/zhongbentong7/status/2110180808111857667",
       "original": "https://pbs.twimg.com/media/HUjePtTbAAAzreX.jpg?name=orig",
-      "caption": "Board 2, the fake: one QFN-64 chip with a blank square logo where the part markings should be, a crystal (X1) and two buttons (S1, S2), with the USB-C connector on the right."
+      "caption": "Board 2, the fake: one chip printed with the Ledger logo where the part markings should be, and a crystal (X1), with the USB-C connector on the right."
     },
     {
       "file": "HUjePtSbgAApTNt.jpg",
