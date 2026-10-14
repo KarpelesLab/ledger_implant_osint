@@ -33,6 +33,11 @@ const sellerCount = computed(
   <aside class="advice" aria-labelledby="advice-title">
     <h2 id="advice-title">Bought a Ledger in 2026? Take a look inside.</h2>
     <p>
+      Not every case is made public, and this list only covers the ones that were. There have also
+      been reports from Southeast Asia of tampered Ledger Nano X, Flex and Stax devices. If your
+      device, model or seller isn't listed here, that doesn't mean it's safe.
+    </p>
+    <p>
       New sellers turn up every day, so don't rely on this list alone. Opening the case takes about
       five minutes, and the photos in these reports show what to look for: extra wires, an added
       board, or an antenna stuck inside the case. Check before you set the device up.
