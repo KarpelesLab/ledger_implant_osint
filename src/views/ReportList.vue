@@ -43,10 +43,11 @@ const sellerCount = computed(
       board, or an antenna stuck inside the case. Check before you set the device up.
     </p>
     <p>
-      If you find one, don't use the device, and
-      <a :href="newCaseUrl" target="_blank" rel="noopener">report it</a>. If it was already set up,
-      treat its recovery phrase as exposed: create a new one on a device you trust and move your
-      funds to it.
+      If you find one, move your funds right away, to a new recovery phrase created on a device you
+      trust. If you lost funds, report it to the police and follow their advice. If you didn't,
+      share it publicly, for example on social media, and
+      <a :href="newCaseUrl" target="_blank" rel="noopener">add it here</a>. You can also contact
+      <a href="https://x.com/MagicalTux" target="_blank" rel="noopener">Mark Karpelès on X</a>.
     </p>
   </aside>
 
