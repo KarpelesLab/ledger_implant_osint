@@ -1,0 +1,117 @@
+{
+  "title": "Joe Grand's teardown of the original Ledger Nano X implant",
+  "reportedAt": "2026-07-20T18:16:19Z",
+  "device": {
+    "model": "Ledger Nano X"
+  },
+  "purchase": {
+    "retailer": "Lazada",
+    "store": "Sellers \"TH-ledger nano x\", \"THLedger nano x\" and \"TH-Ledger\"",
+    "city": "Bangkok",
+    "country": "TH",
+    "date": null,
+    "dateNote": "The listing screenshots show delivery estimates of 27–29 Sep, with no year. It was after the August 2025 Reddit post that prompted the research.",
+    "price": "฿4,664 to ฿4,874 per listing"
+  },
+  "implant": {
+    "generation": "Gen 1",
+    "status": "confirmed",
+    "marking": "V05",
+    "analyzedBy": "Joe Grand (@joegrand), Grand Idea Studio",
+    "components": [
+      "Implant board marked V05 and 2522 on the back, hand-wired with enamelled copper wire to the Nano X's OLED SPI lines (CS, CLK, DI), power and USB D+/D−",
+      "Luat Air700E 4G LTE Cat. 1bis cellular modem",
+      "Unmarked QFN-20 Arm Cortex-M0+ MCU, 3 × 3 mm",
+      "MFF2 eSIM (5 × 6 mm DFN-8), ICCID 89314404001365967271, Vodafone NL \"DATA ONLY\" profile, last registered in the Philippines (Smart) and the USA (T-Mobile)",
+      "8 cm hand-wound coil antenna, a quarter wave at about 937 MHz",
+      "Smaller replacement battery, 261626 70 mAh 3.7 V 0.259 Wh, dated 2406",
+      "Fixed 10 kΩ resistor in place of the battery's NTC thermistor, and the fuel-gauge resistor bypassed so the battery always reads 100%"
+    ],
+    "notes": "The first public reverse engineering of the implant, presented by Joe Grand at hardwear.io USA 2026 in Santa Clara, with the firmware extracted from the implant published alongside. His research began with an August 2025 Reddit post from a buyer in Thailand who got a tampered Nano X from a Lazada seller. Joe then bought three Nano X units (black, pink and gold) from three Lazada sellers shipping from Bangkok. One listing called itself an \"Official Ledger Nano X distributor\". The implant MCU taps the SPI bus between the Nano X's secure element and its screen. It matches the screen data against glyphs for the letters a–z stored in its firmware (at 0x4D00–0x4E40), rebuilds the recovery phrase, saves it to flash at 0x7000, and sends it over 4G LTE. The firmware holds a word list stored as letter indexes (GRAPE, SOURCE, VICIOUS…). The modem's debug UART shows EiGENCOM D-FOTA bootloader version 2.5, built 22 Jan 2024. Joe said in a reply that one capacitor was missing on all of his samples. This is the hand-wired build later called Gen 1."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/joegrand/status/2079269184111034752",
+      "author": "Joe Grand",
+      "handle": "joegrand",
+      "postedAt": "2026-07-20T18:16:19Z",
+      "text": "Video from my Reverse Engineering a Ledger Nano X Hardware Implant talk (@hardwear_io) is up along with firmware extracted from the implant! https://grandideastudio.com/portfolio/security/ledger-hardware-implant/"
+    },
+    {
+      "url": "https://grandideastudio.com/portfolio/security/ledger-hardware-implant/",
+      "title": "Reverse Engineering a Ledger Nano X Hardware Implant",
+      "author": "Joe Grand, Grand Idea Studio"
+    },
+    {
+      "url": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "title": "Slides (revised 29 May 2026)",
+      "author": "Joe Grand, Grand Idea Studio"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WNpW52x-EWY",
+      "title": "Talk video, hardwear.io USA 2026",
+      "author": "Joe Grand"
+    },
+    {
+      "url": "https://grandideastudio.com/media/ledger_hardware_implant_fw.zip",
+      "title": "Firmware extracted from the implant MCU",
+      "author": "Joe Grand, Grand Idea Studio"
+    },
+    {
+      "url": "https://x.com/joegrand/status/2082570742722424945",
+      "author": "Joe Grand",
+      "handle": "joegrand",
+      "postedAt": "2026-07-29T20:55:32Z",
+      "text": "@MisterAddons @hardwear_io Yep, 8cm -> f ≈ 937 MHz @ 1/4 wave -> Cat. 1bis (4G LTE)"
+    }
+  ],
+  "images": [
+    {
+      "file": "slide-66-labelled.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 66: the implant with its parts labelled: MCU, eSIM, cellular modem and the coil antenna."
+    },
+    {
+      "file": "HNsJFQ3bAAAV3BU.jpg",
+      "source": "https://x.com/joegrand/status/2079269184111034752",
+      "original": "https://pbs.twimg.com/media/HNsJFQ3bAAAV3BU.jpg?name=orig",
+      "caption": "The implant removed from the device, with the hand-wound copper coil antenna and the remains of the potting compound."
+    },
+    {
+      "file": "slide-29-implant-back.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 29: the back of the implant board, marked V05 and 2522, with pads for SWD, USB, the OLED SPI lines (CS, CLK, DI), BOOT and power."
+    },
+    {
+      "file": "slide-24-opened.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 24: the opened gold Nano X, with the implant glued inside the case and wired to the main board over the 70 mAh replacement battery."
+    },
+    {
+      "file": "slide-33-front-side.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 33: the front-side changes: a smaller battery to make room, a fixed 10 kΩ resistor in place of the thermistor, and the fuel gauge bypassed."
+    },
+    {
+      "file": "slide-34-back-side.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 34: the back of the Nano X main board, with the wires to the implant held down by black adhesive."
+    },
+    {
+      "file": "HObGsEDXsAAi_FK.jpg",
+      "source": "https://x.com/joegrand/status/2082570742722424945",
+      "original": "https://pbs.twimg.com/media/HObGsEDXsAAi_FK.jpg?name=orig",
+      "caption": "The coil antenna straightened out on a cutting mat: about 8 cm, a quarter wave at about 937 MHz."
+    },
+    {
+      "file": "slide-21-three-boxes.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 21: the three Nano X units Joe Grand bought, in black, pink and gold boxes."
+    },
+    {
+      "file": "slide-20-lazada-listings.jpg",
+      "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
+      "caption": "Slide 20: the three Lazada listings, from sellers \"TH-ledger nano x\", \"THLedger nano x\" and \"TH-Ledger\", all shipping from Pathum Wan, Bangkok."
+    }
+  ]
+}
