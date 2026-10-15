@@ -5,6 +5,8 @@ import StatusBadge from '@/components/StatusBadge.vue'
 import SilkMarking from '@/components/SilkMarking.vue'
 import { newCaseUrl } from '@/links'
 
+const cleanCount = computed(() => reports.filter((r) => r.implant.status === 'clean').length)
+
 const sellerCount = computed(
   () => new Set(reports.map((r) => r.purchase.retailer).filter(Boolean)).size,
 )
@@ -16,8 +18,12 @@ const sellerCount = computed(
     <p class="lede">
       Most reports here are Ledger devices found with an extra circuit inside, added after they left
       the factory. The circuits found so far carry their own antenna. On the units examined in
-      detail, they read the recovery phrase off the screen. The rest are counterfeits: fake devices
+      detail, they read the recovery phrase off the screen. Others are counterfeits: fake devices
       made to look like a Ledger, with no secure element to protect the recovery phrase.
+      <template v-if="cleanCount">
+        {{ cleanCount === 1 ? 'One device was' : `${cleanCount} devices were` }} checked and found
+        clean, and {{ cleanCount === 1 ? 'is' : 'are' }} listed for comparison.
+      </template>
     </p>
     <p class="count">
       {{ reports.length }} devices from {{ sellerCount }} named sellers so far. Every report links

@@ -12,8 +12,9 @@
     "dateNote": "@coinjoined posted the MediaMarkt Trier storefront as \"mystery shopping\" that morning, then a MediaMarkt receipt from Trier dated 13.10.2026, 10:42, listing a Ledger Nano X Onyx Black among several items (€355.96 in total)."
   },
   "implant": {
-    "status": "unverified",
-    "notes": "@coinjoined bought several Ledger devices at the MediaMarkt store in Trier, Germany, on 13 Oct 2026, including a Nano X, and shipped them to Mark Karpelès (@MagicalTux) in Japan for examination. Their contents haven't been published yet. The implant photos @coinjoined posted later that day are not of these devices: he told Mark Karpelès in a direct message that they show a Russian buyer's Nano X from ozon.ru, recorded in its own report."
+    "status": "clean",
+    "analyzedBy": "Mark Karpelès (@MagicalTux), from photos",
+    "notes": "@coinjoined bought several Ledger devices at the MediaMarkt store in Trier, Germany, on 13 Oct 2026, including a Nano X, and shipped some of them to Mark Karpelès (@MagicalTux) in Japan. He also sent Mark Karpelès photos of his own device from that purchase. Mark Karpelès couldn't find any implant or other problem in them. This is based on photos only, so it doesn't rule out a well-hidden implant, but nothing out of place was seen. The implant photos @coinjoined posted later that day are not of these devices: he told Mark Karpelès in a direct message that they show a Russian buyer's Nano X from ozon.ru, recorded in its own report."
   },
   "sources": [
     {
