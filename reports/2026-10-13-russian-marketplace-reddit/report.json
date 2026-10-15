@@ -1,22 +1,26 @@
 {
-  "title": "Ledger Nano X from a Russian marketplace",
+  "title": "Ledger Nano X from Ozon, Russia",
   "reportedAt": "2026-10-13T13:51:49Z",
   "device": {
     "model": "Ledger Nano X"
   },
   "purchase": {
-    "retailer": "An unnamed online marketplace",
+    "retailer": "Ozon",
+    "store": "ozon.ru",
     "country": "RU",
     "date": null
   },
   "implant": {
     "status": "confirmed",
+    "marking": "AC-A2205-NX-欧亚版-V1.1",
     "components": [
-      "Thin implant board wedged between the display and the main board",
-      "Antenna connector with a coax lead",
-      "Replacement battery, label ending \"0.481Wh 2026-…-03\""
+      "Thin black implant board between the display and the main board, carrying a large module and a QFN chip, with a u.FL antenna connector",
+      "Printed antenna inside the case, marked AC-A2205-NX 欧亚版-V1.1, with a coax lead",
+      "Replacement battery: MB 281544, 3.7 V 130 mAh 0.481 Wh, dated 2026-04-03",
+      "Small board on the battery, partly legible marking …X-1350-D",
+      "Twisted enamelled wires from the battery board to the Nano X board, next to the USB-C connector"
     ],
-    "notes": "A Reddit user, u/cheerful_afternoon, opened a Nano X bought on a Russian online marketplace, not an official Ledger reseller. Inside was a thin extra board wedged between the screen and the main board, with its own antenna. The details here come from Bitcoin Well's summary and the labelled photo: the Reddit thread is behind a CAPTCHA and couldn't be read for this report. The visible battery label (0.481 Wh, dated 2026-…-03) matches the replacement battery in the first MediaMarkt device and the @coinjoined device (MB 281544, 130 mAh 0.481 Wh, 2026-04-03)."
+    "notes": "A Russian buyer opened a Nano X bought on Ozon (ozon.ru), not an official Ledger reseller, and found a thin extra board wedged between the screen and the main board, with its own antenna. The labelled photo was posted on Reddit by u/cheerful_afternoon and shared by Bitcoin Well. The Reddit thread is behind a CAPTCHA and couldn't be read for this report. Three more photos of the device were posted by @coinjoined on 13 Oct. He later told Mark Karpelès that they show the Russian buyer's device, bought on ozon.ru, and not one of the devices he bought at MediaMarkt Trier that day. That the Reddit post and @coinjoined's photos show the same device is an inference: both come from a Russian buyer, and the battery label visible in the Reddit photo (0.481 Wh, 2026-…-03) matches the one in @coinjoined's photos. The same battery (MB 281544, 130 mAh 0.481 Wh, 2026-04-03) is in the first MediaMarkt device, and the antenna is a later revision (V1.1) of that device's AC-A2205 antenna (AC-A2205-NANO-X-欧亚版-V1.0)."
   },
   "sources": [
     {
@@ -30,6 +34,13 @@
       "handle": "bitcoinwell",
       "postedAt": "2026-10-13T13:51:49Z",
       "text": "This is what the Ledger implant looks like from the inside.\n\nA Reddit user opened a Nano X bought on a Russian marketplace, not from Ledger, and found a thin extra board wedged between the screen and the main circuit board, with its own antenna.\n\nLedger confirmed the mechanism overnight: the board reads the screen, waits for the 24 words to appear during setup, and sends them out over LTE on its own eSIM. The secure chip was never touched. It didn’t need to be.\n\nThis is why you always buy straight from the manufacturer. If you are worried and want to check, Ledger’s own guide is in the replies.\n\n(labels in the photo: u/cheerful_afternoon on Reddit.)"
+    },
+    {
+      "url": "https://x.com/coinjoined/status/2110034615247245682",
+      "author": "Coinjoined Chris",
+      "handle": "coinjoined",
+      "postedAt": "2026-10-13T15:47:09Z",
+      "text": "There shouldn't be any cables. First 3 images show the implant, last image a genuine @Ledger Nano X.\nAllegedly affected resellers so far: MediaMarkt, Saturn 🇩🇪, Cryptobilis 🇲🇾, Ozon 🇷🇺 and Singapore Airport 🇸🇬"
     }
   ],
   "images": [
@@ -38,6 +49,30 @@
       "source": "https://x.com/bitcoinwell/status/2110005592605475218",
       "original": "https://pbs.twimg.com/media/HUg-U1DXMAA1f6r.jpg?name=orig",
       "caption": "Labelled by the Reddit user: the thin implant board between the main display and the main PCB, with an antenna connector. The battery behind is labelled \"0.481Wh 2026-…-03\"."
+    },
+    {
+      "file": "HUhZRdaWIAEbOMB.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZRdaWIAEbOMB.jpg?name=orig",
+      "caption": "Opened case: a black implant board with a large module and a u.FL antenna connector sits beside the green Nano X board."
+    },
+    {
+      "file": "HUhZSARXUAAnu-O.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZSARXUAAnu-O.jpg?name=orig",
+      "caption": "The Nano X board lifted out, with the replacement 130 mAh battery (2026-04-03) wired on. The coax lead runs to a printed antenna in the case, marked AC-A2205-NX 欧亚版-V1.1."
+    },
+    {
+      "file": "HUhZSjBWYAA_g_R.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZSjBWYAA_g_R.jpg?name=orig",
+      "caption": "Close-up: twisted enamelled wires run from the small board on the battery to pads on the Nano X board, next to the USB-C connector."
+    },
+    {
+      "file": "HUhZTHDX0AAT4Ve.jpg",
+      "source": "https://x.com/coinjoined/status/2110034615247245682",
+      "original": "https://pbs.twimg.com/media/HUhZTHDX0AAT4Ve.jpg?name=orig",
+      "caption": "For comparison, the post's last photo: a genuine Nano X, with no extra wires or boards and its original 100 mAh battery."
     }
   ]
 }
