@@ -6,7 +6,10 @@
     "variant": "Counterfeit board"
   },
   "purchase": {
-    "date": null
+    "retailer": "JD.com (京东)",
+    "country": "CN",
+    "date": null,
+    "dateNote": "Cos said he bought it from JD.com in mainland China, without giving the seller's name or the order date."
   },
   "implant": {
     "status": "counterfeit",
@@ -17,7 +20,7 @@
       "Buttons on the lower edge, labelled S2, where the genuine board has SW1 and SW2 on the upper edge",
       "No board-maker markings, where the genuine board has E232940, JVE-M2 and a JOVE3 2203 date code"
     ],
-    "notes": "Cos (@evilcos) opened a Nano S Plus and posted its board next to the board in Ledger's official support article, asking where the backdoor part was. Yishi (@ohyishi) replied that it is a counterfeit: the whole board is different, and it has no secure element. The one main chip carries a Ledger logo instead of a maker's name and part number, and the 40 MHz crystal points to an ESP32. Yishi also linked it to fake Nano S Plus units reported in spring 2026. A Brazilian researcher bought one of those on a Chinese e-commerce site. Its chip markings were ground off, and its firmware called itself \"Nano S+ V2.1\". It stored the PIN and recovery phrase in plain text and sent them to the attackers' server. A QR code in the box led to a fake Ledger Live that showed a fake genuineness check. Cos agreed this device is from that wave, and said it still worked when tested. Mark Karpelès (@MagicalTux) replied that the board has no remote communication like the spy implants. He said it would likely show as not genuine in Ledger Wallet, and might give a predetermined seed. This is the same board as @zhongbentong7's second device. Cos didn't say where it was bought."
+    "notes": "Cos (@evilcos) opened a Nano S Plus and posted its board next to the board in Ledger's official support article, asking where the backdoor part was. Yishi (@ohyishi) replied that it is a counterfeit: the whole board is different, and it has no secure element. The one main chip carries a Ledger logo instead of a maker's name and part number, and the 40 MHz crystal points to an ESP32. Yishi also linked it to fake Nano S Plus units reported in spring 2026. A Brazilian researcher bought one of those on a Chinese e-commerce site. Its chip markings were ground off, and its firmware called itself \"Nano S+ V2.1\". It stored the PIN and recovery phrase in plain text and sent them to the attackers' server. A QR code in the box led to a fake Ledger Live that showed a fake genuineness check. Cos agreed this device is from that wave, and said it still worked when tested. Mark Karpelès (@MagicalTux) replied that the board has no remote communication like the spy implants. He said it would likely show as not genuine in Ledger Wallet, and might give a predetermined seed. This is the same board as @zhongbentong7's second device. Cos later confirmed that he bought it from JD.com (京东) in mainland China. He didn't say whether it was JD's own store or a third-party seller on the platform."
   },
   "sources": [
     {
