@@ -44,6 +44,20 @@ const sellerCount = computed(
       device, model or seller isn't listed here, that doesn't mean it's safe.
     </p>
     <p>
+      The cases listed here are a small part of the total.
+      <a
+        href="https://bitquery.io/investigations/ledger-cryptobilis-hack"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Bitquery's on-chain investigation</a
+      >
+      counts about 324 wallets drained on 9 October 2026, across six blockchains. One owner can hold
+      wallets on several chains, so that means fewer than 324 devices. None of these victims has
+      published details, and not all the wallets are confirmed to be on Ledger devices. They are
+      assumed to be mostly Ledger devices sold by CryptoBilis in Malaysia, Indonesia and the
+      Philippines.
+    </p>
+    <p>
       New sellers turn up every day, so don't rely on this list alone. Opening the case takes about
       five minutes, and the photos in these reports show what to look for: extra wires, an added
       board, or an antenna stuck inside the case. Check before you set the device up.
