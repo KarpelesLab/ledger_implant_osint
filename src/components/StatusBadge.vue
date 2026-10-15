@@ -32,7 +32,8 @@ defineProps<{ status: ImplantStatus }>()
 .counterfeit {
   color: var(--confirmed);
 }
-.unverified {
+.unverified,
+.pending {
   color: var(--muted);
 }
 .clean {

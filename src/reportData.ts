@@ -1,6 +1,7 @@
 // Report types and plain-text helpers. Kept free of Vite-only APIs so the build can use them too.
 
-export type ImplantStatus = 'confirmed' | 'suspected' | 'counterfeit' | 'unverified' | 'clean'
+export type ImplantStatus =
+  'confirmed' | 'suspected' | 'counterfeit' | 'unverified' | 'pending' | 'clean'
 
 export interface Source {
   url: string
@@ -69,6 +70,7 @@ export const statusLabel: Record<ImplantStatus, string> = {
   suspected: 'Implant suspected',
   counterfeit: 'Counterfeit device',
   unverified: 'Not yet verified',
+  pending: 'Pending arrival',
   clean: 'No implant found',
 }
 
