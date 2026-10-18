@@ -1,0 +1,61 @@
+{
+  "title": "Ledger Stax from CryptoBilis, shared by @DesWeb4",
+  "reportedAt": "2026-10-14T13:28:57Z",
+  "device": {
+    "model": "Ledger Stax",
+    "variant": "Graphite"
+  },
+  "purchase": {
+    "retailer": "CryptoBilis",
+    "city": "Petaling Jaya",
+    "country": "MY",
+    "date": "2026-04-27",
+    "dateNote": "From the CryptoBilis invoice the buyer posted: invoice 1830, order 15655, dated 27 April 2026, a Ledger Stax in Graphite (SKU L STAX 3M) paid with Buy Now Pay Later. The invoice gives the store's address in Petaling Jaya, Selangor. The WhatsApp chat around it shows CryptoBilis arranging a same-day Lalamove delivery.",
+    "price": "RM2,198.00 (RM2,188.00 plus RM10.00 shipping), per the invoice"
+  },
+  "implant": {
+    "status": "confirmed",
+    "components": [
+      "Nordic Semiconductor nRF9151 LTE-M / NB-IoT module (FCC ID 2ANPO00NRF9151, IC 24529-NRF9151), with its lot line unreadable in the photo",
+      "QFN chip next to the module, with no readable markings",
+      "u.FL connector on the implant board, and a flexible antenna with a coax lead, stuck to the inside of the back cover",
+      "A short flex arm on the implant board, ending in a small chip"
+    ],
+    "notes": "Desmond (@DesWeb4), in Malaysia, posted that the Ledger Stax he bought from CryptoBilis had \"serious concerns\" and asked Ledger and CryptoBilis for replacements or compensation. His photos show the same kind of implant as @wentrre's Stax: an nRF9151 cellular module and a QFN chip on an added board stacked on the Stax's main board (Rev. 5.4), with an antenna on the back cover. The invoice is order 15655, placed on 27 April 2026. @wentrre's order confirmation is order 15660, on the same day, for the same product at the same price. Two orders placed five apart on the same day both received implanted devices."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/DesWeb4/status/2110362224418304172",
+      "author": "Desmond",
+      "handle": "DesWeb4",
+      "postedAt": "2026-10-14T13:28:57Z",
+      "text": "I purchased a Ledger Stax from CryptoBilis, a Ledger-authorized reseller, only to discover serious concerns about my device.\n\nWhat is even more disappointing is the lack of a clear resolution for customers who purchased potentially affected devices through an authorized reseller.\n\nDoes Ledger intend to take responsibility for affected customers? Will Ledger offer replacements, refunds, or compensation for those who purchased potentially compromised hardware wallets?\n\nCustomers trusted Ledger and its authorized resellers to protect their crypto assets. We deserve clear answers, transparency, and a concrete solution — not silence and uncertainty.\n\nWho will take responsibility for the financial losses and security risks faced by affected customers?\n\n@Ledger @CryptoBilis\n\n#Ledger #LedgerStax #CryptoSecurity #HardwareWallet #CryptoCommunity #ConsumerRights #Web3"
+    }
+  ],
+  "images": [
+    {
+      "file": "HUmDQR4bYAAuSfi.jpg",
+      "source": "https://x.com/DesWeb4/status/2110362224418304172",
+      "original": "https://pbs.twimg.com/media/HUmDQR4bYAAuSfi.jpg?name=orig",
+      "caption": "The Stax taken apart: the back cover with the antenna peeled off its corner (top), the main board with the implant still on it (centre), the body with the battery (bottom) and the NFC coil (right)."
+    },
+    {
+      "file": "HUmDQR5bEAABxzq.jpg",
+      "source": "https://x.com/DesWeb4/status/2110362224418304172",
+      "original": "https://pbs.twimg.com/media/HUmDQR5bEAABxzq.jpg?name=orig",
+      "caption": "The main board (Rev. 5.4) with the added board on its left: the nRF9151 module (FCC ID 2ANPO00NRF9151) and a QFN chip below it."
+    },
+    {
+      "file": "HUmDQR0aoAAHnzz.jpg",
+      "source": "https://x.com/DesWeb4/status/2110362224418304172",
+      "original": "https://pbs.twimg.com/media/HUmDQR0aoAAHnzz.jpg?name=orig",
+      "caption": "The implant removed: the flexible antenna with its coax lead and u.FL plug (top), and the implant board with the shielded module, the QFN chip, a u.FL connector and a flex arm (bottom)."
+    },
+    {
+      "file": "HUmDQRybYAAYcQM.jpg",
+      "source": "https://x.com/DesWeb4/status/2110362224418304172",
+      "original": "https://pbs.twimg.com/media/HUmDQRybYAAYcQM.jpg?name=orig",
+      "caption": "WhatsApp chat with CryptoBilis and the invoice: order 15655, 27 April 2026, Ledger Stax in Graphite, RM2,198.00, Buy Now Pay Later. The buyer's name is blurred."
+    }
+  ]
+}

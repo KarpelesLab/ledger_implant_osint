@@ -9,7 +9,7 @@
     "retailer": "CryptoBilis",
     "country": "MY",
     "date": "2026-04-27",
-    "dateNote": "From the order confirmation the buyer posted: a Ledger Stax in Graphite, paid with \"Bilis Pay\", priced in Malaysian ringgit. The store's name isn't visible in the screenshot. CryptoBilis is inferred from the payment method and currency.",
+    "dateNote": "From the order confirmation the buyer posted: a Ledger Stax in Graphite, paid with \"Bilis Pay\", priced in Malaysian ringgit. The store's name isn't visible in the screenshot. CryptoBilis is inferred from the payment method and currency, and from @DesWeb4's CryptoBilis invoice for the same product at the same price, order 15655 on the same day (this one is order 15660).",
     "price": "RM2,198.00, per the order confirmation"
   },
   "implant": {
@@ -21,7 +21,7 @@
       "Printed antenna on the inside of the back cover, marked AC-A2014-STAX-V1.1, with a coax lead to a u.FL connector",
       "An extra layer on the circuit board, which the buyer noticed first"
     ],
-    "notes": "Wentrre (@wentrre) asked why the circuit board of his Ledger Stax had an extra layer. The photos show a Nordic nRF9151 cellular module, which a genuine Stax doesn't have, and a printed antenna inside the back cover. Two days later he posted the parts on a scale (49.0 g in total) and said he bought it in April. The order confirmation is dated 27 April 2026. The antenna follows the same AC-A2xxx naming as the Flex (AC-A2201-FLEX) and Nano X (AC-A2016-NANO, AC-A2205-NANO-X) antennas in other reports. The nRF9151's lot code starts 2539, the same week as Specimen B's (2539XAAG00ETTE5). The Data Matrix code on the module decodes to that lot code, not to an IMEI."
+    "notes": "Wentrre (@wentrre) asked why the circuit board of his Ledger Stax had an extra layer. The photos show a Nordic nRF9151 cellular module, which a genuine Stax doesn't have, and a printed antenna inside the back cover. Two days later he posted the parts on a scale (49.0 g in total) and said he bought it in April. The order confirmation is order 15660, dated 27 April 2026. @DesWeb4's implanted Stax was CryptoBilis order 15655, placed the same day. The antenna follows the same AC-A2xxx naming as the Flex (AC-A2201-FLEX) and Nano X (AC-A2016-NANO, AC-A2205-NANO-X) antennas in other reports. The nRF9151's lot code starts 2539, the same week as Specimen B's (2539XAAG00ETTE5). The Data Matrix code on the module decodes to that lot code, not to an IMEI."
   },
   "sources": [
     {
