@@ -6,11 +6,11 @@
   },
   "purchase": {
     "retailer": "CryptoBilis",
-    "store": "Global Pizza Party, Raintree Club",
+    "store": "CryptoBilis booth, Global Pizza Party, Raintree Club",
     "city": "Kuala Lumpur",
     "country": "MY",
     "date": "2026-05-22",
-    "dateNote": "Bought from CryptoBilis at their Global Pizza Party on 22 May 2026, at the Raintree Club in Kuala Lumpur, per the post."
+    "dateNote": "Bought in person at the CryptoBilis booth at the Global Pizza Party on 22 May 2026, at the Raintree Club in Kuala Lumpur, per the post and GitHub issue #1."
   },
   "implant": {
     "version": "1.1",
@@ -22,7 +22,7 @@
       "QFN chip and a shielded can next to the module",
       "u.FL connector on the implant board, and a flexible antenna marked \"AC-A1911-FLEX-V1.1\" with a coax lead, stuck to the inside of the back cover"
     ],
-    "notes": "Adam Mashrique (@sakak_musdom), in Malaysia, found the implant in a friend's Ledger Flex. The friend set it up but never used it, so no funds were lost. The implant board sits beside the battery, next to the Flex's own flex cables, with the nRF9151 module, an eSIM chip and a u.FL connector for the antenna on the back cover. On 10 October 2026 @sakak_musdom had asked whether anyone who bought from CryptoBilis had found an implant, as the known victims then seemed to have bought from Lazada sellers. This is the third implanted device traced to CryptoBilis, after the two Stax bought online on 27 April 2026, and the first bought at one of its events."
+    "notes": "Adam Mashrique (@sakak_musdom), in Malaysia, found the implant in a friend's Ledger Flex. The friend set it up but never used it, so no funds were lost. The friend had seen @sakak_musdom's call in the Bitcoiner Malaysia Telegram groups for anyone who bought a Ledger from CryptoBilis, and reached out. The implant board sits beside the battery, next to the Flex's own flex cables, with the nRF9151 module, an eSIM chip and a u.FL connector for the antenna on the back cover. On 10 October 2026 @sakak_musdom had asked whether anyone who bought from CryptoBilis had found an implant, as the known victims then seemed to have bought from Lazada sellers. This is the third implanted device traced to CryptoBilis, after the two Stax bought online on 27 April 2026, and the first bought at one of its events."
   },
   "sources": [
     {
@@ -31,6 +31,14 @@
       "handle": "sakak_musdom",
       "postedAt": "2026-10-27T03:33:24Z",
       "text": "I found a SIM implant in my friend's @Ledger Flex. He set it up but never used it, so no funds were lost.\n\nHe bought it from @cryptobilis at their May 22 2026 Global Pizza Party, Raintree Club Kuala Lumpur.\n\nnRF9151 LTE module, eSIM module, v1.1 UFL antenna\n\ncc @MagicalTux"
+    },
+    {
+      "url": "https://github.com/KarpelesLab/ledger_implant_osint/issues/1",
+      "title": "New case: Ledger Flex (GitHub issue #1)",
+      "author": "Adam Mashrique",
+      "handle": "musdom",
+      "postedAt": "2026-10-27T03:43:22Z",
+      "text": "I found a SIM implant in my friend's Ledger Flex. He set it up but never used it, so no funds were lost.\n\nHe bought it in person from Cryptobilis at their May 22 2026 Global Pizza Party, Raintree Club Kuala Lumpur.\n\nHe saw my post in the Bitcoiner Malaysia telegram groups looking for anyone who bought Ledger devices from Cryptobilis, and reached out to me."
     },
     {
       "url": "https://x.com/sakak_musdom/status/2109028080291328238",
@@ -42,16 +50,22 @@
   ],
   "images": [
     {
-      "file": "HVm0N4DawAAT9Cy.jpg",
-      "source": "https://x.com/sakak_musdom/status/2114923391878901932",
-      "original": "https://pbs.twimg.com/media/HVm0N4DawAAT9Cy.jpg?name=orig",
-      "caption": "The Flex opened: the back cover with the \"AC-A1911-FLEX-V1.1\" antenna and its coax lead (top), and the body with the implant board along the right edge, beside the battery (bottom)."
+      "file": "issue1-0b9f58db.jpg",
+      "source": "https://github.com/KarpelesLab/ledger_implant_osint/issues/1",
+      "original": "https://github.com/user-attachments/assets/0b9f58db-e538-4ddd-9b55-37410bc82b4b",
+      "caption": "The Flex opened: the back cover with the \"AC-A1911-FLEX-V1.1\" antenna and its coax lead (top), and the body with the implant board along the right edge, beside the battery (bottom). A larger copy of the first photo in the X post."
     },
     {
-      "file": "HVm2iM0bgAAUnGI.jpg",
-      "source": "https://x.com/sakak_musdom/status/2114923391878901932",
-      "original": "https://pbs.twimg.com/media/HVm2iM0bgAAUnGI.jpg?name=orig",
-      "caption": "The implant board: the nRF9151 module (FCC ID 2ANPO00NRF9151) with the eSIM chip to its right, a QFN chip and a shielded can to its left, and the u.FL connector below."
+      "file": "issue1-4f902f33.jpg",
+      "source": "https://github.com/KarpelesLab/ledger_implant_osint/issues/1",
+      "original": "https://github.com/user-attachments/assets/4f902f33-b331-4167-af86-414f9eb90298",
+      "caption": "The implant board: the nRF9151 module (FCC ID 2ANPO00NRF9151) with the eSIM chip to its right, a QFN chip and a shielded can to its left, and the u.FL connector below. A wider, larger copy of the second photo in the X post."
+    },
+    {
+      "file": "issue1-1de788f6.jpg",
+      "source": "https://github.com/KarpelesLab/ledger_implant_osint/issues/1",
+      "original": "https://github.com/user-attachments/assets/1de788f6-f38d-458f-bfc2-0f7c77ccffe0",
+      "caption": "The back cover lifted with the Flex's own NFC coil (EU_NFC_FPC Rev 2.1.0) still in place: the antenna's coax lead runs from the cover down to the implant board, beneath the coil. The device has an orange frame."
     }
   ]
 }
