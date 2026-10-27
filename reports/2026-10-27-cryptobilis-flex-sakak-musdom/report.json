@@ -1,0 +1,57 @@
+{
+  "title": "Ledger Flex from CryptoBilis, shared by @sakak_musdom",
+  "reportedAt": "2026-10-27T03:33:24Z",
+  "device": {
+    "model": "Ledger Flex"
+  },
+  "purchase": {
+    "retailer": "CryptoBilis",
+    "store": "Global Pizza Party, Raintree Club",
+    "city": "Kuala Lumpur",
+    "country": "MY",
+    "date": "2026-05-22",
+    "dateNote": "Bought from CryptoBilis at their Global Pizza Party on 22 May 2026, at the Raintree Club in Kuala Lumpur, per the post."
+  },
+  "implant": {
+    "version": "1.1",
+    "status": "confirmed",
+    "marking": "AC-A1911-FLEX-V1.1",
+    "components": [
+      "Nordic Semiconductor nRF9151 LTE-M / NB-IoT module (NRF9151 LACA A1, FCC ID 2ANPO00NRF9151, IC 24529-NRF9151), lot line read as 2539XAAC00LAPD2",
+      "eSIM chip to the right of the module, per the post",
+      "QFN chip and a shielded can next to the module",
+      "u.FL connector on the implant board, and a flexible antenna marked \"AC-A1911-FLEX-V1.1\" with a coax lead, stuck to the inside of the back cover"
+    ],
+    "notes": "Adam Mashrique (@sakak_musdom), in Malaysia, found the implant in a friend's Ledger Flex. The friend set it up but never used it, so no funds were lost. The implant board sits beside the battery, next to the Flex's own flex cables, with the nRF9151 module, an eSIM chip and a u.FL connector for the antenna on the back cover. On 10 October 2026 @sakak_musdom had asked whether anyone who bought from CryptoBilis had found an implant, as the known victims then seemed to have bought from Lazada sellers. This is the third implanted device traced to CryptoBilis, after the two Stax bought online on 27 April 2026, and the first bought at one of its events."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/sakak_musdom/status/2114923391878901932",
+      "author": "Adam Mashrique",
+      "handle": "sakak_musdom",
+      "postedAt": "2026-10-27T03:33:24Z",
+      "text": "I found a SIM implant in my friend's @Ledger Flex. He set it up but never used it, so no funds were lost.\n\nHe bought it from @cryptobilis at their May 22 2026 Global Pizza Party, Raintree Club Kuala Lumpur.\n\nnRF9151 LTE module, eSIM module, v1.1 UFL antenna\n\ncc @MagicalTux"
+    },
+    {
+      "url": "https://x.com/sakak_musdom/status/2109028080291328238",
+      "author": "Adam Mashrique",
+      "handle": "sakak_musdom",
+      "postedAt": "2026-10-10T21:07:32Z",
+      "text": "Can anyone who bought Ledgers from @cryptobilis confirm (either by replying here or DMing) that their wallets got drained, disassembled their devices and found a SIM implant in it?\n\nIt seems like the only victims affected are those who bought from shady Lazada merchants, not CB"
+    }
+  ],
+  "images": [
+    {
+      "file": "HVm0N4DawAAT9Cy.jpg",
+      "source": "https://x.com/sakak_musdom/status/2114923391878901932",
+      "original": "https://pbs.twimg.com/media/HVm0N4DawAAT9Cy.jpg?name=orig",
+      "caption": "The Flex opened: the back cover with the \"AC-A1911-FLEX-V1.1\" antenna and its coax lead (top), and the body with the implant board along the right edge, beside the battery (bottom)."
+    },
+    {
+      "file": "HVm2iM0bgAAUnGI.jpg",
+      "source": "https://x.com/sakak_musdom/status/2114923391878901932",
+      "original": "https://pbs.twimg.com/media/HVm2iM0bgAAUnGI.jpg?name=orig",
+      "caption": "The implant board: the nRF9151 module (FCC ID 2ANPO00NRF9151) with the eSIM chip to its right, a QFN chip and a shielded can to its left, and the u.FL connector below."
+    }
+  ]
+}
