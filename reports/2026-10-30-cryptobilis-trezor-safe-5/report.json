@@ -1,0 +1,55 @@
+{
+  "title": "Trezor Safe 5 from CryptoBilis, reported by Trezor",
+  "reportedAt": "2026-10-30T07:01:39Z",
+  "device": {
+    "model": "Trezor Safe 5"
+  },
+  "purchase": {
+    "retailer": "CryptoBilis",
+    "store": "CryptoBilis's Tokopedia and Shopee stores, and CryptoBilis directly",
+    "date": "2026-08",
+    "dateNote": "Trezor says the three implanted devices it found were bought between 20 August and 23 September 2026, and that the first one reported was bought in August 2026. It doesn't say which device was bought where."
+  },
+  "implant": {
+    "version": "1.3",
+    "status": "confirmed",
+    "marking": "A2207-N5-欧亚版-V1.3",
+    "analyzedBy": "Trezor",
+    "components": [
+      "Extra board fitted on top of the Trezor main board, with a Raspberry Pi RP2350 microcontroller, a large shielded module and a u.FL connector",
+      "Antenna on the lower back of the screen, marked \"A2207-N5-欧亚版-V1.3\", with a coax lead",
+      "Extra wires connecting the implant board to the device"
+    ],
+    "notes": "Not a Ledger device, but it is listed here because the implant clearly comes from the same maker: its antenna is marked \"A2207-N5-欧亚版-V1.3\", the same scheme as the Ledger antennas (AC-A2201-FLEX-欧亚版-V1.2, AC-A2205-NX-欧亚版-V1.1, AC-A2201-FX-…-V1.3), and CryptoBilis also sold several of the implanted Ledger devices. Trezor first announced a single implant reported through responsible disclosure on 30 October 2026, after it had already dropped CryptoBilis as a reseller on 9 October over the Ledger reports. In its 12 November update, Trezor says it found the implant in three Safe 5 devices bought from CryptoBilis between 20 August and 23 September 2026, out of 48 devices it has checked from CryptoBilis buyers, and none in devices from other resellers or in other Trezor models. Its lab extracted the implant's firmware from the first device: the board sits between the main board and the screen and only listens, copying what is shown on the screen and typed on the device. It recognizes recovery words and passphrases, encrypts them and sends them over the mobile network to the attackers' server, retrying until it gets through. Trezor says it works the same way as the implants found in Ledger devices. No owner has reported lost funds. Trezor firmware 2.13.1, released on 11 November 2026, stops these implants from capturing anything, and Trezor is replacing devices bought from CryptoBilis from March 2026 onwards."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/Trezor/status/2120880182173073421",
+      "title": "Our CryptoBilis investigation: what we found and what we’ve changed",
+      "author": "Trezor",
+      "handle": "Trezor",
+      "postedAt": "2026-11-12T14:03:34Z",
+      "text": "This is an update on our investigation into the hardware implant reported in a Trezor Safe 5 bought from the reseller CryptoBilis. On 11 November we released a firmware update that stops the implants we’ve found from capturing anything, making the current batch useless. We have also cut our reseller network by about 80%, and every remaining reseller will have to follow much stricter rules. Our investigation so far shows the implants are limited to Trezor Safe 5 devices bought from CryptoBilis between August and September 2026: we’ve found none in devices from any other reseller, or in any other Trezor model.\n\n[…]\n\nAcross the devices we’ve checked, three Trezor Safe 5s bought from CryptoBilis contain the implant, including the one reported to us in October. Our lab has examined that device, and the other two were identified from photos sent by their owners. All three were bought between 20 August and 23 September 2026, through CryptoBilis’s Tokopedia and Shopee stores and directly from CryptoBilis. None of their owners has lost funds. Every other device we’ve checked showed no evidence of tampering."
+    },
+    {
+      "url": "https://x.com/Trezor/status/2116062963752747040",
+      "author": "Trezor",
+      "handle": "Trezor",
+      "postedAt": "2026-10-30T07:01:39Z",
+      "text": "CryptoBilis update\n\nWe've been made aware, through responsible disclosure, of a single hardware implant in a Trezor Safe 5 device bought from the reseller CryptoBilis in August 2026.\n\nNo CryptoBilis buyer has reported a loss of funds to us.\n\n[…]\n\nOn October 9, 2026, we removed CryptoBilis as a reseller following reports of tampered Ledger devices sold through it. Since then, we have been inspecting Trezor devices that customers bought from CryptoBilis and have found no signs of tampering on any of the four devices we’ve received so far."
+    },
+    {
+      "url": "https://trezor.io/blog/news/implant-reported-in-a-trezor-sold-by-cryptobilis",
+      "title": "Implant reported in a Trezor sold by CryptoBilis",
+      "author": "Trezor"
+    }
+  ],
+  "images": [
+    {
+      "file": "HW7d1yfWEAAUyCu.jpg",
+      "source": "https://x.com/Trezor/status/2120880182173073421",
+      "original": "https://pbs.twimg.com/media/HW7d1yfWEAAUyCu.jpg?name=orig",
+      "caption": "Trezor's comparison of a genuine Safe 5 (left) with the implanted one (right): the antenna marked \"A2207-N5-欧亚版-V1.3\" on the lower back of the screen (2), the extra wires (3), and the implant board taken off the main board (1), with a Raspberry Pi RP2350 microcontroller, a large shielded module and a u.FL connector."
+    }
+  ]
+}
