@@ -1,15 +1,16 @@
 {
-  "title": "Ledger Flex from Sharaf DG, Dubai",
+  "title": "Ledger Flex from Virgin Megastore, The Dubai Mall",
   "reportedAt": "2026-11-16T06:11:31Z",
   "device": {
     "model": "Ledger Flex"
   },
   "purchase": {
-    "retailer": "Sharaf DG",
+    "retailer": "Virgin Megastore",
+    "store": "Virgin The Dubai Mall",
     "city": "Dubai",
     "country": "AE",
-    "date": null,
-    "dateNote": "Not given. Rewinsky posted on 15 November 2026 that it was \"a brand new ledger from sharaf dg in dubai\"; the store branch and the purchase date weren't given."
+    "date": "2026-09-13",
+    "dateNote": "From the receipt Rewinsky posted on 16 November 2026: a Virgin Megastore tax invoice (V Star Multimedia LLC, \"Virgin The Dubai Mall\") dated 13/09/2026 at 22:38, for one \"LEDGER FLEX CRYPTO WALLET\" (barcode 3760027785461) at AED 1,029.00 plus a paper bag, AED 1,030.00 in total, paid by card."
   },
   "implant": {
     "version": "1.3",
@@ -19,7 +20,7 @@
       "Implant board along the edge of the device, next to the hinge of the back cover, with a u.FL connector",
       "Flexible antenna on the inside of the back cover, marked \"AC-A2201-FX-…-V1.3\", with a coax lead down to the implant board"
     ],
-    "notes": "Rewinsky (@Rewinskyx) posted on 15 November 2026 that 1.3k SOL had been drained from his Ledger, with the transaction on Solscan. The next day he opened the device and wrote that it was tampered with. The photo shows the same kind of antenna as the other Flex implants, stuck to the inside of the back cover, with its coax lead running to an extra board beside the Flex's own NFC coil (EU_NFC_FPC Rev 2.1.0). The marking reads \"AC-A2201-FX-…-V1.3\" (mirrored in the photo); the Chinese characters in the middle are not clearly legible, but are likely \"欧亚版\" as on the V1.2 Flex antennas. This is the first V1.3 antenna recorded here on a Ledger (the implant in the Trezor Safe 5 sold by CryptoBilis also has a V1.3 antenna, A2207-N5-欧亚版-V1.3), and it uses \"FX\" where the earlier Flex antennas read \"FLEX\". Asked whether the device was new, he replied on 15 November that it was \"a brand new ledger from sharaf dg in dubai\", and that he downloaded the app from the App Store. On 16 November he told Mark Karpelès it came from Virgin Megastore in Dubai; this report follows his public post. It is the first implanted device recorded here from the Middle East. A Ledger Stax bought at Virgin Megastore Dubai on 11 October 2026 was drained of 507k USDT on 14 November, per @newbabylonorder."
+    "notes": "Rewinsky (@Rewinskyx) posted on 15 November 2026 that 1.3k SOL had been drained from his Ledger, with the transaction on Solscan. The next day he opened the device and wrote that it was tampered with. The photo shows the same kind of antenna as the other Flex implants, stuck to the inside of the back cover, with its coax lead running to an extra board beside the Flex's own NFC coil (EU_NFC_FPC Rev 2.1.0). The marking reads \"AC-A2201-FX-…-V1.3\" (mirrored in the photo); the Chinese characters in the middle are not clearly legible, but are likely \"欧亚版\" as on the V1.2 Flex antennas. This is the first V1.3 antenna recorded here on a Ledger (the implant in the Trezor Safe 5 sold by CryptoBilis also has a V1.3 antenna, A2207-N5-欧亚版-V1.3), and it uses \"FX\" where the earlier Flex antennas read \"FLEX\". Asked whether the device was new, he replied on 15 November that it was \"a brand new ledger from sharaf dg in dubai\", and that he downloaded the app from the App Store. He corrected this on 16 November (\"btw im retarded its from @virginmegastore in dubai\"), posting the Virgin Megastore receipt for a Ledger Flex bought at The Dubai Mall on 13 September 2026, and on 17 November named the store as \"Virgin megastore dubai mall\". He told Mark Karpelès the same in private. His earlier reply to @flipski77, to which the correction responds, has been deleted. It is the first implanted device recorded here from the Middle East. A Ledger Stax bought at Virgin Megastore Dubai (branch not given) on 11 October 2026 was drained of 507k USDT on 14 November, per @newbabylonorder."
   },
   "sources": [
     {
@@ -28,6 +29,20 @@
       "handle": "Rewinskyx",
       "postedAt": "2026-11-16T06:11:31Z",
       "text": "i just checked my ledger is tampered"
+    },
+    {
+      "url": "https://x.com/Rewinskyx/status/2122469220709490840",
+      "author": "Rewinsky",
+      "handle": "Rewinskyx",
+      "postedAt": "2026-11-16T23:17:50Z",
+      "text": "@flipski77 @SharafDG btw im retarded its from @virginmegastore in dubai for yall mb"
+    },
+    {
+      "url": "https://x.com/Rewinskyx/status/2122794848176480483",
+      "author": "Rewinsky",
+      "handle": "Rewinskyx",
+      "postedAt": "2026-11-17T20:51:46Z",
+      "text": "@rickyrick_009 @Ledger Virgin megastore dubai mall"
     },
     {
       "url": "https://x.com/Rewinskyx/status/2121861028661342234",
@@ -42,6 +57,13 @@
       "handle": "Rewinskyx",
       "postedAt": "2026-11-15T06:34:29Z",
       "text": "i got drained for 1.3k sol from my ledger if someone can help me i would appreicate it \n\ntranscation hash :\n\nhttps://solscan.io/tx/2ZJvRzSBa19HYN1LtvsAoQeEN3jYDaS2b8MatvvAgdPUmMKVf9jBoekSJhM5B3JdfZgYfMvFZRCSFbhagHBeue8C"
+    },
+    {
+      "url": "https://x.com/0xcg2100/status/2122953654692892709",
+      "author": "0XXX",
+      "handle": "0xcg2100",
+      "postedAt": "2026-11-18T07:22:48Z",
+      "text": "我擦，官方授权店里买的 Ledger，拆开里面居然装着天线？？？\n\n11月15日，有用户称自己的 Ledger Flex 被转走约 1300 枚 SOL，第二天拆开机子发图，说被动过手脚。这人后来贴出迪拜 The Dubai Mall 里 Virgin Megastore 的购物小票，日期是 9月13日。工程师 Mark Karpelès 的公开植入物登记库确认，这台机器壳里加装了电路板和天线，判定为已确认植入，也是该库记录的首例中东案例。\n\n另一名用户称，10月11日在同一家店买的全新 Ledger Stax，11月14日被转走 50.7 万枚 USDT。但这台还没有拆机照片，植入还没被证实。\n\n截至 11月18日，@Ledger 官方还没就迪拜这两起公开说明。他们此前只确认过，中招的是东南亚经销商卖出的设备。授权店买的都不一定能躺平，尼玛。"
     }
   ],
   "images": [
@@ -50,6 +72,12 @@
       "source": "https://x.com/Rewinskyx/status/2122210939432734886",
       "original": "https://pbs.twimg.com/media/HXObliDWoAA3AlZ.jpg?name=orig",
       "caption": "The Flex opened, with the back cover lifted: the antenna marked \"AC-A2201-FX-…-V1.3\" on the inside of the cover, its coax lead running down to the implant board along the hinge edge, and the Flex's NFC coil below."
+    },
+    {
+      "file": "HXSGee_XMAAMl8p.jpg",
+      "source": "https://x.com/Rewinskyx/status/2122469220709490840",
+      "original": "https://pbs.twimg.com/media/HXSGee_XMAAMl8p.jpg?name=orig",
+      "caption": "Rewinsky's Virgin Megastore receipt: \"Virgin The Dubai Mall\", 13/09/2026 22:38, one Ledger Flex at AED 1,029.00, held in front of a Ledger Flex box. @0xcg2100 later reposted the same file."
     },
     {
       "file": "HXObmaQWQAAVj3a.png",
