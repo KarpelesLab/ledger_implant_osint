@@ -133,7 +133,7 @@ const purchaseRows = computed(() => {
       </ul>
     </section>
 
-    <section class="photos" aria-labelledby="photos-title">
+    <section v-if="report.images.length" class="photos" aria-labelledby="photos-title">
       <h2 id="photos-title">Photos</h2>
       <p class="muted">Select a photo to view it full size.</p>
       <ul class="grid">

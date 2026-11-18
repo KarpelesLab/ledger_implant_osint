@@ -123,17 +123,20 @@ export function seoPages(): Plugin {
 
       mkdirSync(path.join(outDir, 'og'), { recursive: true })
       for (const r of reports) {
+        // A report without photos uses the site's own preview image.
         const file = r.preview?.file ?? r.images[0]?.file
         const pictured = r.images.find((img) => img.file === file)
-        if (!file || !pictured) throw new Error(`seo: reports/${r.id} has no preview image`)
-        await sharp(path.join(reportsDir, r.id, file))
-          .rotate()
-          .resize(1200, 630, { fit: 'cover', position: r.preview?.position ?? 'centre' })
-          .jpeg({ quality: 82, mozjpeg: true })
-          .toFile(path.join(outDir, 'og', `${r.id}.jpg`))
+        if (file && !pictured) throw new Error(`seo: reports/${r.id} has no image ${file}`)
+        if (pictured) {
+          await sharp(path.join(reportsDir, r.id, pictured.file))
+            .rotate()
+            .resize(1200, 630, { fit: 'cover', position: r.preview?.position ?? 'centre' })
+            .jpeg({ quality: 82, mozjpeg: true })
+            .toFile(path.join(outDir, 'og', `${r.id}.jpg`))
+        }
 
         const url = `${siteUrl}report/${r.id}/`
-        const image = `${siteUrl}og/${r.id}.jpg`
+        const image = pictured ? `${siteUrl}og/${r.id}.jpg` : home.image
         const description = reportDescription(r)
         write(
           `report/${r.id}/index.html`,
@@ -144,7 +147,7 @@ export function seoPages(): Plugin {
             description,
             url,
             image,
-            imageAlt: pictured.caption ?? r.title,
+            imageAlt: pictured ? (pictured.caption ?? r.title) : home.imageAlt,
             type: 'article',
             published: r.reportedAt,
             jsonLd: {
