@@ -1,0 +1,29 @@
+{
+  "title": "Ledger Flex from MediaMarkt, Berlin, shared by @Mikaelxp14",
+  "reportedAt": "2026-11-18T05:38:46Z",
+  "device": {
+    "model": "Ledger Flex"
+  },
+  "purchase": {
+    "retailer": "MediaMarkt",
+    "store": "MediaMarkt Tech Village, Grunerstraße 20",
+    "city": "Berlin",
+    "country": "DE",
+    "date": null,
+    "dateNote": "Not given. The post links a Google Maps pin for MediaMarkt Tech Village Berlin (Grunerstraße 20) as the store where the device was bought."
+  },
+  "implant": {
+    "status": "suspected",
+    "notes": "The owner (@Mikaelxp14) says more than $320,000 was drained from their Ledger Flex on 14 November 2026, the same day as the Virgin Megastore Dubai Stax theft. They bought it at MediaMarkt Tech Village in Berlin, Germany. The post lists two BTC transactions and one USDT (TRC-20) transaction, with the hashes split across lines (one contains \"ele3e\", probably a typo for \"e1e3e\"). No photos of the inside of the device have been published, so the implant is suspected but not confirmed. The implanted Nano X devices bought by Johannes (@0xJohannes_) also came from MediaMarkt, at least one of them in Germany."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/Mikaelxp14/status/2122927473427964142",
+      "author": "OxC40day",
+      "handle": "Mikaelxp14",
+      "postedAt": "2026-11-18T05:38:46Z",
+      "text": "Just got over $320,000 drained from my ledger flex @Ledger this past week on 11/14/26.\n\nGot the ledger in Media Markt in Berlin Germany. https://maps.app.goo.gl/UhCc6z7PC7EAGDze6?g_st=ic\n\nTxid hash\n\nBTC \n\n569e71d891b36e4571e861a54db30e09dde56754408ead\n3ede3af75be554fcad\n\nBTC \n\n7425f2afd572e2491f9e57e61c8525008021d15dbddafe82\nele3e8900325b7fc\n\nUSDT trc20\n\n7657d74eec0e4d0f209f327e3b1f28f486d00c4581b0bc1\n83961ca98284082ae\n\nIf anyone can please help during this tough time that would be immensely appreciated 🙏"
+    }
+  ],
+  "images": []
+}
