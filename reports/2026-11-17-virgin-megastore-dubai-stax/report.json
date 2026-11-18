@@ -13,7 +13,7 @@
   },
   "implant": {
     "status": "suspected",
-    "notes": "The owner (@newbabylonorder) says 507k USDT was stolen from their Ledger Stax on 14 November 2026, and asked Tether to freeze the funds. They bought the Stax at Virgin Megastore Dubai on 11 October 2026, two days after the CryptoBilis implants were disclosed. The same store sold @Rewinskyx's Flex, whose implant was confirmed from photos. No photos of the inside of this Stax have been published, so the implant is suspected but not confirmed. According to the owner's trace, the funds went through the Relay bridge to Ethereum, into Tornado Cash (455.6 ETH on 16 November), out in four linked withdrawal clusters on 17 November, then through CoW Swap and the USDT0 bridge to TRON. Three of the four clusters fed one hub address on TRON, and the same thief address drained a second victim (122k USDT) in the same minute. The owner filed police case 226004410464 and Tether ticket #584794."
+    "notes": "The owner (@newbabylonorder) says 507k USDT was stolen from their Ledger Stax on 14 November 2026, and asked Tether to freeze the funds. They bought the Stax new at Virgin Megastore Dubai on 11 October 2026, two days after the CryptoBilis implants were disclosed, and say the recovery phrase was generated on the device and never typed anywhere. The same store sold @Rewinskyx's Flex, whose implant was confirmed from photos. No photos of the inside of this Stax have been published, so the implant is suspected but not confirmed. According to the owner's trace, the funds went through the Relay bridge to Ethereum, into Tornado Cash (455.6 ETH on 16 November), out in four linked withdrawal clusters on 17 November, then through CoW Swap and the USDT0 bridge to TRON. Three of the four clusters fed one hub address on TRON, and the same thief address drained a second victim (122k USDT) in the same minute. The owner filed police case 226004410464 and Tether ticket #584794."
   },
   "sources": [
     {
@@ -43,6 +43,13 @@
       "handle": "newbabylonorder",
       "postedAt": "2026-11-17T22:59:58Z",
       "text": "Context: Ledger Stax bought at Virgin Megastore Dubai on 11 Oct, two days after the CryptoBilis implant disclosure. Another implanted Ledger from the same store was documented by @MagicalTux this week. Full annex with all hashes sent to Tether compliance. Please help. 🙏"
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2122827794854130161",
+      "author": "New Babylon Order Worldwide",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-17T23:02:41Z",
+      "text": "@Ledger @Ledger_Support @DonjonLedger 507k USDT drained from my Ledger Stax on 14 Nov.bought new at Virgin Megastore Dubai on 11 Oct 2026,seed generated on device,not  typed anywhere.Another Ledger from the same store was found with a V1.3 implant this week (@MagicalTux registry)"
     }
   ],
   "images": []
