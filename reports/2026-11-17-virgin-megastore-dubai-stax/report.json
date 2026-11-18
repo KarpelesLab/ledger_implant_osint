@@ -9,11 +9,12 @@
     "city": "Dubai",
     "country": "AE",
     "date": "2026-10-11",
-    "dateNote": "Bought at Virgin Megastore Dubai on 11 October 2026, per the post. The store branch wasn't given."
+    "dateNote": "Bought at Virgin Megastore Dubai on 11 October 2026, per the post. The store branch wasn't given. The store's price label on the box is dated 20 July 2026, which the owner reads as the date the store received the unit, so it sat in stock for almost three months before the sale.",
+    "price": "AED 1,649.00, from the store's label on the box"
   },
   "implant": {
     "status": "suspected",
-    "notes": "The owner (@newbabylonorder) says 507k USDT was stolen from their Ledger Stax on 14 November 2026, and asked Tether to freeze the funds. They bought the Stax new at Virgin Megastore Dubai on 11 October 2026, two days after the CryptoBilis implants were disclosed, and say the recovery phrase was generated on the device and never typed anywhere. Their post says another implanted Ledger came from the same store; that is @Rewinskyx's Flex, whose implant was confirmed from photos. Rewinsky first said Sharaf DG, then corrected it and posted a receipt from Virgin Megastore in The Dubai Mall. This post doesn't say which Virgin Megastore branch sold the Stax. No photos of the inside of this Stax have been published, so the implant is suspected but not confirmed. According to the owner's trace, the funds went through the Relay bridge to Ethereum, into Tornado Cash (455.6 ETH on 16 November), out in four linked withdrawal clusters on 17 November, then through CoW Swap and the USDT0 bridge to TRON. Three of the four clusters fed one hub address on TRON, and the same thief address drained a second victim (122k USDT) in the same minute. The owner filed police case 226004410464 and Tether ticket #584794."
+    "notes": "The owner (@newbabylonorder) says 507k USDT was stolen from their Ledger Stax on 14 November 2026, and asked Tether to freeze the funds. They bought the Stax new at Virgin Megastore Dubai on 11 October 2026, two days after the CryptoBilis implants were disclosed, and say the recovery phrase was generated on the device and never typed anywhere. Their post says another implanted Ledger came from the same store; that is @Rewinskyx's Flex, whose implant was confirmed from photos. Rewinsky first said Sharaf DG, then corrected it and posted a receipt from Virgin Megastore in The Dubai Mall. This post doesn't say which Virgin Megastore branch sold the Stax. No photos of the inside of this Stax have been published, so the implant is suspected but not confirmed. On 18 November the owner said this is deliberate: the device is sealed for a court-appointed lab, which will X-ray it before opening it, and they will send the lab results to this registry when they come back. They added that the device was idle when 507,671 USDT left the wallet at 20:15 UTC on 14 November. The store's label on the box, dated 20 July 2026, reads \"LEDGER STAX CRYPTO WALLET 3.7-INCH TOUCHSCREEN\" at AED 1,649.00. The owner also says Ledger's 15 October response told resellers to keep stock off the shelves, never resell returns and report customer complaints. According to the owner's trace, the funds went through the Relay bridge to Ethereum, into Tornado Cash (455.6 ETH on 16 November), out in four linked withdrawal clusters on 17 November, then through CoW Swap and the USDT0 bridge to TRON, and on to OTC desks. Three of the four clusters fed one hub address on TRON, and the same thief address drained a second victim (122k USDT) in the same minute. The owner filed police case 226004410464 and Tether ticket #584794, and says all the hashes went to Dubai Police, Tether, Relay and TRM."
   },
   "sources": [
     {
@@ -50,7 +51,42 @@
       "handle": "newbabylonorder",
       "postedAt": "2026-11-17T23:02:41Z",
       "text": "@Ledger @Ledger_Support @DonjonLedger 507k USDT drained from my Ledger Stax on 14 Nov.bought new at Virgin Megastore Dubai on 11 Oct 2026,seed generated on device,not  typed anywhere.Another Ledger from the same store was found with a V1.3 implant this week (@MagicalTux registry)"
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2123084137473228871",
+      "author": "New Babylon Order",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-18T16:01:18Z",
+      "text": "Update on my Ledger Stax case (507k USDT, Dubai, bought at an authorized retailer 11 Oct).\nPress says my implant is \"unconfirmed\" — no teardown photos. Correct, and deliberate: the device is sealed for a court-appointed lab, X-ray before opening. A kitchen-table teardown is a good tweet and a useless exhibit."
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2123084143114498373",
+      "author": "New Babylon Order",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-18T16:01:19Z",
+      "text": "What IS confirmed: seed generated on-device, never typed anywhere. Device idle when 507,671 USDT left at 20:15 UTC on 14 Nov. Same minute, same thief address took 122k from a second wallet.\nPath: Relay → ETH → Tornado (455 ETH) → 4 clusters → back to TRON → OTC desks. All hashes with Dubai Police, Tether, Relay, TRM."
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2123084148634181696",
+      "author": "New Babylon Order",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-18T16:01:20Z",
+      "text": "The store label on my box: received 20 July 2026. Ledger's 15 Oct response told resellers: stock stays off shelves, returns are never resold, customer complaints get reported.\nThose are the questions a court will ask."
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2123084154212647074",
+      "author": "New Babylon Order",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-18T16:01:22Z",
+      "text": "Lab results go to @MagicalTux's registry the day they come back, not before.\nUAE Ledger buyers this autumn: don't reset, don't open, move funds to a seed that wasn't born on it, file a report. DMs open to other victims."
     }
   ],
-  "images": []
+  "images": [
+    {
+      "file": "HXa1w3za4AAFp7P.jpg",
+      "source": "https://x.com/newbabylonorder/status/2123084137473228871",
+      "original": "https://pbs.twimg.com/media/HXa1w3za4AAFp7P.jpg?name=orig",
+      "caption": "The store's price label on the Stax box, dated 07/20/2026: \"LEDGER STAX CRYPTO WALLET 3.7-INCH TOUCHSCREEN\", AED 1,649.00, under the Arabic category \"home safety accessories\". The owner blurred the barcode and other lines."
+    }
+  ]
 }
