@@ -1,0 +1,49 @@
+{
+  "title": "Ledger Stax from Virgin Megastore, Dubai, shared by @newbabylonorder",
+  "reportedAt": "2026-11-17T22:59:55Z",
+  "device": {
+    "model": "Ledger Stax"
+  },
+  "purchase": {
+    "retailer": "Virgin Megastore",
+    "city": "Dubai",
+    "country": "AE",
+    "date": "2026-10-11",
+    "dateNote": "Bought at Virgin Megastore Dubai on 11 October 2026, per the post. The store branch wasn't given."
+  },
+  "implant": {
+    "status": "suspected",
+    "notes": "The owner (@newbabylonorder) says 507k USDT was stolen from their Ledger Stax on 14 November 2026, and asked Tether to freeze the funds. They bought the Stax at Virgin Megastore Dubai on 11 October 2026, two days after the CryptoBilis implants were disclosed. The same store sold @Rewinskyx's Flex, whose implant was confirmed from photos. No photos of the inside of this Stax have been published, so the implant is suspected but not confirmed. According to the owner's trace, the funds went through the Relay bridge to Ethereum, into Tornado Cash (455.6 ETH on 16 November), out in four linked withdrawal clusters on 17 November, then through CoW Swap and the USDT0 bridge to TRON. Three of the four clusters fed one hub address on TRON, and the same thief address drained a second victim (122k USDT) in the same minute. The owner filed police case 226004410464 and Tether ticket #584794."
+  },
+  "sources": [
+    {
+      "url": "https://x.com/newbabylonorder/status/2122827099467817274",
+      "author": "New Babylon Order Worldwide",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-17T22:59:55Z",
+      "text": "@Tether_to @paoloardoino Urgent freeze request. 507k USDT stolen from my Ledger Stax (Dubai, 14 Nov). Laundered via Tornado Cash → USDT0 back to TRON. Funds sitting NOW on:\nTXjTRQjYdvzfPwVpwfW3YipDpcJFee42ZC\nTDsDZbnSRNBUxsJxW5sp1hUy6Gh33gH97a\nTicket #584794."
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2122827103414763818",
+      "author": "New Babylon Order Worldwide",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-17T22:59:56Z",
+      "text": "Police case 226004410464.\n\nFull trace: Relay bridge → ETH → Tornado Cash (455.6 ETH, 16 Nov) → 4 linked withdrawal clusters 17 Nov 03:00–07:00 UTC → CoW Swap → USDT0 bridge (LayerZero dstEid 30420) → TRON. Bridge tx: 0x2d36b7a1…, 0xd82f44f6…, 0x704ae1c2…, 0x2cc0d720…"
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2122827107525116376",
+      "author": "New Babylon Order Worldwide",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-17T22:59:57Z",
+      "text": "Three of four clusters forward to the same hub TXjTRQ…ee42ZC (252k USDT as of 22:30 UTC) — single operator, ~1.1k ETH / ~2M USDT in 3.5 hours. The hub is cashing out every few hours. Same thief address drained a 2nd victim (122k USDT) in the same minute. Serial operation."
+    },
+    {
+      "url": "https://x.com/newbabylonorder/status/2122827111358713985",
+      "author": "New Babylon Order Worldwide",
+      "handle": "newbabylonorder",
+      "postedAt": "2026-11-17T22:59:58Z",
+      "text": "Context: Ledger Stax bought at Virgin Megastore Dubai on 11 Oct, two days after the CryptoBilis implant disclosure. Another implanted Ledger from the same store was documented by @MagicalTux this week. Full annex with all hashes sent to Tether compliance. Please help. 🙏"
+    }
+  ],
+  "images": []
+}
