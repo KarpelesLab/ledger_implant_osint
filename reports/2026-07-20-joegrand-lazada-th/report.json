@@ -6,11 +6,11 @@
   },
   "purchase": {
     "retailer": "Lazada",
-    "store": "Sellers \"TH-ledger nano x\", \"THLedger nano x\" and \"TH-Ledger\"",
+    "store": "Sellers \"LedgerXXX\" (the first device), and \"TH-ledger nano x\", \"THLedger nano x\" and \"TH-Ledger\" (Joe Grand's three)",
     "city": "Bangkok",
     "country": "TH",
     "date": null,
-    "dateNote": "The listing screenshots show delivery estimates of 27–29 Sep, with no year. It was after the August 2025 Reddit post that prompted the research.",
+    "dateNote": "The first implanted device was ordered between 12 Jul and 17 Aug 2025. Reddit user u/slapnutzzzz, who lives in Thailand, wrote on 12 Jul 2025 that his own Nano X only worked plugged in, which is why he ordered a cheap one from Lazada seller \"LedgerXXX\" to take its battery. He ordered a purple one, received a pink one that the seller let him keep, opened it and posted the implant on 17 Aug 2025. He later bought a second one from the same seller; one went to Ledger, which had it around the end of August 2025, and the other to Joe Grand. Joe Grand's own three units came later through a reshipping service; their listing screenshots show delivery estimates of 27–29 Sep, with no year, most likely 2025.",
     "price": "฿4,664 to ฿4,874 per listing"
   },
   "implant": {
@@ -27,9 +27,29 @@
       "Smaller replacement battery, 261626 70 mAh 3.7 V 0.259 Wh, dated 2406",
       "Fixed 10 kΩ resistor in place of the battery's NTC thermistor, and the fuel-gauge resistor bypassed so the battery always reads 100%"
     ],
-    "notes": "The first public reverse engineering of the implant, presented by Joe Grand at hardwear.io USA 2026 in Santa Clara, with the firmware extracted from the implant published alongside. His research began with an August 2025 Reddit post from a buyer in Thailand who got a tampered Nano X from a Lazada seller. Joe then bought three Nano X units (black, pink and gold) from three Lazada sellers shipping from Bangkok. One listing called itself an \"Official Ledger Nano X distributor\". The implant MCU taps the SPI bus between the Nano X's secure element and its screen. It matches the screen data against glyphs for the letters a–z stored in its firmware (at 0x4D00–0x4E40), rebuilds the recovery phrase, saves it to flash at 0x7000, and sends it over 4G LTE. The firmware holds a word list stored as letter indexes (GRAPE, SOURCE, VICIOUS…). The modem's debug UART shows EiGENCOM D-FOTA bootloader version 2.5, built 22 Jan 2024. Joe said in a reply that one capacitor was missing on all of his samples. This is the hand-wired build later called Gen 1."
+    "notes": "The first public reverse engineering of the implant, presented by Joe Grand at hardwear.io USA 2026 in Santa Clara, with the firmware extracted from the implant published alongside. His research began with a 17 Aug 2025 Reddit post by u/slapnutzzzz, a buyer in Thailand who ordered a cheap Nano X from Lazada seller \"LedgerXXX\" only for its battery, and found a green board wired to the main board and a smaller battery inside. That buyer sent one of these devices to Joe and another to Ledger. Joe then bought three Nano X units (black, pink and gold) from three Lazada sellers shipping from Bangkok. One listing called itself an \"Official Ledger Nano X distributor\". The implant MCU taps the SPI bus between the Nano X's secure element and its screen. It matches the screen data against glyphs for the letters a–z stored in its firmware (at 0x4D00–0x4E40), rebuilds the recovery phrase, saves it to flash at 0x7000, and sends it over 4G LTE. The firmware holds a word list stored as letter indexes (GRAPE, SOURCE, VICIOUS…). The modem's debug UART shows EiGENCOM D-FOTA bootloader version 2.5, built 22 Jan 2024. Joe said in a reply that one capacitor was missing on all of his samples. This is the hand-wired build later called Gen 1."
   },
   "sources": [
+    {
+      "url": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "title": "“Nano X” being sold to steal your crypto",
+      "author": "u/slapnutzzzz on r/ledgerwallet",
+      "postedAt": "2025-08-17T05:07:07Z",
+      "text": "I ordered a Nano X off of a shopping platform (Lazada) from a seller LedgerXXX in Thailand. The only reason I wanted it was to cannibalize the battery out of it to put it into my nano x as the battery holds no charge. The price was too good to be true, so I knew immediately it would be fake. I have posted to Ledger on X, and I will be contacting law enforcement here about this.\n\nHere are some photos of the device.\n\nThey sent me the wrong colour and graciously allowed me to keep it when I asked for it to be exchanged for another colour.\n\nJust beware these things are out there in the wild."
+    },
+    {
+      "url": "https://www.reddit.com/r/ledgerwallet/comments/1lxxbcs/comment/n2pzlin/",
+      "title": "Comment on \"Problem with nano x battery\"",
+      "author": "u/slapnutzzzz on r/ledgerwallet",
+      "postedAt": "2025-07-12T13:02:11Z",
+      "text": "Mine only works plugged in, even though the battery says 99%. Built in obsolescence"
+    },
+    {
+      "url": "https://www.reddit.com/r/ledgerwallet/comments/1x57x7d/comment/pgusrh7/",
+      "author": "u/slapnutzzzz on r/ledgerwallet",
+      "postedAt": "2026-10-15T07:37:59Z",
+      "text": "I am the guy who bought this and created the post. These were being sold by some dodgy seller on Lazada Thailand (owned by AliExpress) that was not an authorized reseller. I only wanted the battery out of it for my 5 year old Nano X that couldn't keep a charge. I ended up getting two of them, one I sent to Joe Grand and the other I sent to Ledger. So they knew about it in late August of 2025."
+    },
     {
       "url": "https://x.com/joegrand/status/2079269184111034752",
       "author": "Joe Grand",
@@ -112,6 +132,42 @@
       "file": "slide-20-lazada-listings.jpg",
       "source": "https://grandideastudio.com/media/ledger_hardware_implant_slides.pdf",
       "caption": "Slide 20: the three Lazada listings, from sellers \"TH-ledger nano x\", \"THLedger nano x\" and \"TH-Ledger\", all shipping from Pathum Wan, Bangkok."
+    },
+    {
+      "file": "reddit-vhrpqtkxiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/vhrpqtkxiijf1.jpg",
+      "caption": "The first implanted device, as opened by u/slapnutzzzz: the green implant board marked V05 and 2522 with its coil antenna in the pink case, wired to the Nano X board and the smaller 261626 70 mAh battery dated 2406."
+    },
+    {
+      "file": "reddit-cjtg1skxiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/cjtg1skxiijf1.jpg",
+      "caption": "The same device from another angle: the implant board's BOOT, CS, CLK, DM and DP pads, and the copper wires taped down with Kapton."
+    },
+    {
+      "file": "reddit-d93ivwlxiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/d93ivwlxiijf1.jpg",
+      "caption": "The pink Nano X front. u/slapnutzzzz noted that the screen shows through the cover glass, unlike on his genuine Nano X."
+    },
+    {
+      "file": "reddit-rjg9cxixiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/rjg9cxixiijf1.jpg",
+      "caption": "The back of the shrink-wrapped box, with English, Traditional Chinese and Thai text."
+    },
+    {
+      "file": "reddit-jzppcklxiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/jzppcklxiijf1.jpg",
+      "caption": "Chat with the Lazada seller \"LedgerXxx\": the purple unit he ordered had sold out, so the seller refunded him and told him to keep the pink one."
+    },
+    {
+      "file": "reddit-fco8unixiijf1.jpg",
+      "source": "https://www.reddit.com/r/ledgerwallet/comments/1msi594/nano_x_being_sold_to_steal_your_crypto/",
+      "original": "https://i.redd.it/fco8unixiijf1.jpg",
+      "caption": "Earlier part of the same chat with the seller."
     }
   ],
   "preview": {
